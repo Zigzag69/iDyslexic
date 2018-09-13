@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="iDyslexic" customModuleProvider="target">
             <connections>
+                <outlet property="gradient" destination="fMb-Le-GNT" id="D5N-Pu-uX2"/>
+                <outlet property="navigationBar" destination="GFD-Rp-lAj" id="Y4A-VD-6Ge"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,8 +21,42 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient 1px" translatesAutoresizingMaskIntoConstraints="NO" id="fMb-Le-GNT">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wb9-i3-Dck">
+                    <rect key="frame" x="0.0" y="76" width="320" height="492"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GFD-Rp-lAj">
+                    <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="1dg-WO-Xqh"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="iDyslexic" id="I4n-QR-CjL"/>
+                    </items>
+                </navigationBar>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fMb-Le-GNT" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="9lq-BO-NmV"/>
+                <constraint firstItem="fMb-Le-GNT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ABw-Ov-ZYY"/>
+                <constraint firstItem="GFD-Rp-lAj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="CqL-Jl-RK4"/>
+                <constraint firstItem="fMb-Le-GNT" firstAttribute="bottom" secondItem="GFD-Rp-lAj" secondAttribute="bottom" id="Ix9-nk-ugu"/>
+                <constraint firstItem="wb9-i3-Dck" firstAttribute="top" secondItem="fMb-Le-GNT" secondAttribute="bottom" constant="12" id="MA4-3u-81h"/>
+                <constraint firstItem="fMb-Le-GNT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="USD-qi-ll1"/>
+                <constraint firstItem="GFD-Rp-lAj" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="XOx-sy-raD"/>
+                <constraint firstItem="wb9-i3-Dck" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Zgm-iT-R7z"/>
+                <constraint firstItem="wb9-i3-Dck" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="adb-OX-n3p"/>
+                <constraint firstItem="wb9-i3-Dck" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gjH-Oy-0CV"/>
+                <constraint firstItem="GFD-Rp-lAj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ray-RO-ZWb"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
+    <resources>
+        <image name="gradient 1px" width="375" height="1"/>
+    </resources>
 </document>

@@ -9,9 +9,12 @@
 import UIKit
 
 class MainVC: UIViewController {
-
+    @IBOutlet weak var gradient: UIImageView!
+    @IBOutlet weak var navigationBar: UINavigationBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        preparations()
     }
 }
