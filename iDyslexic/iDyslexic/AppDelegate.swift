@@ -10,13 +10,15 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-    let mainRoot = UINavigationController(rootViewController: MainVC())
+    let mainRoot = UINavigationController(rootViewController: MainTBC())
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow()
         window?.makeKeyAndVisible()
+
+        mainRoot.navigationBar.barStyle = .blackOpaque
+        mainRoot.navigationBar.isHidden = true
         window?.rootViewController = mainRoot
         
         return true

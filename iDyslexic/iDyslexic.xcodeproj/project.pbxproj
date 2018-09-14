@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE706A38214BAC9700D1060A /* MainTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE706A36214BAC9700D1060A /* MainTBC.swift */; };
 		FE787BA4214A9E1A009EFD88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE787BA3214A9E1A009EFD88 /* AppDelegate.swift */; };
 		FE787BAB214A9E1C009EFD88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE787BAA214A9E1C009EFD88 /* Assets.xcassets */; };
-		FE787BB9214A9EB6009EFD88 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE787BB7214A9EB6009EFD88 /* MainVC.swift */; };
-		FE787BBA214A9EB6009EFD88 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE787BB8214A9EB6009EFD88 /* MainVC.xib */; };
-		FE787BBC214AA4A1009EFD88 /* MainVC+CustomMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE787BBB214AA4A1009EFD88 /* MainVC+CustomMethods.swift */; };
+		FE787BB9214A9EB6009EFD88 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE787BB7214A9EB6009EFD88 /* HomeVC.swift */; };
+		FE787BBA214A9EB6009EFD88 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE787BB8214A9EB6009EFD88 /* HomeVC.xib */; };
+		FE787BBC214AA4A1009EFD88 /* HomeVC+CustomMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE787BBB214AA4A1009EFD88 /* HomeVC+CustomMethods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE706A36214BAC9700D1060A /* MainTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTBC.swift; sourceTree = "<group>"; };
 		FE787BA0214A9E1A009EFD88 /* iDyslexic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDyslexic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE787BA3214A9E1A009EFD88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE787BAA214A9E1C009EFD88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE787BAF214A9E1C009EFD88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE787BB7214A9EB6009EFD88 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
-		FE787BB8214A9EB6009EFD88 /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
-		FE787BBB214AA4A1009EFD88 /* MainVC+CustomMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC+CustomMethods.swift"; sourceTree = "<group>"; };
+		FE787BB7214A9EB6009EFD88 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FE787BB8214A9EB6009EFD88 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		FE787BBB214AA4A1009EFD88 /* HomeVC+CustomMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+CustomMethods.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE706A35214BAC7A00D1060A /* MainTBC */ = {
+			isa = PBXGroup;
+			children = (
+				FE706A36214BAC9700D1060A /* MainTBC.swift */,
+			);
+			path = MainTBC;
+			sourceTree = "<group>";
+		};
 		FE787B97214A9E1A009EFD88 = {
 			isa = PBXGroup;
 			children = (
@@ -65,19 +75,20 @@
 		FE787BB5214A9E9B009EFD88 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FE787BB6214A9EA1009EFD88 /* MainVC */,
+				FE706A35214BAC7A00D1060A /* MainTBC */,
+				FE787BB6214A9EA1009EFD88 /* HomeVC */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		FE787BB6214A9EA1009EFD88 /* MainVC */ = {
+		FE787BB6214A9EA1009EFD88 /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
-				FE787BB7214A9EB6009EFD88 /* MainVC.swift */,
-				FE787BB8214A9EB6009EFD88 /* MainVC.xib */,
-				FE787BBB214AA4A1009EFD88 /* MainVC+CustomMethods.swift */,
+				FE787BB7214A9EB6009EFD88 /* HomeVC.swift */,
+				FE787BB8214A9EB6009EFD88 /* HomeVC.xib */,
+				FE787BBB214AA4A1009EFD88 /* HomeVC+CustomMethods.swift */,
 			);
-			path = MainVC;
+			path = HomeVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE787BAB214A9E1C009EFD88 /* Assets.xcassets in Resources */,
-				FE787BBA214A9EB6009EFD88 /* MainVC.xib in Resources */,
+				FE787BBA214A9EB6009EFD88 /* HomeVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,8 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE787BA4214A9E1A009EFD88 /* AppDelegate.swift in Sources */,
-				FE787BBC214AA4A1009EFD88 /* MainVC+CustomMethods.swift in Sources */,
-				FE787BB9214A9EB6009EFD88 /* MainVC.swift in Sources */,
+				FE787BBC214AA4A1009EFD88 /* HomeVC+CustomMethods.swift in Sources */,
+				FE706A38214BAC9700D1060A /* MainTBC.swift in Sources */,
+				FE787BB9214A9EB6009EFD88 /* HomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

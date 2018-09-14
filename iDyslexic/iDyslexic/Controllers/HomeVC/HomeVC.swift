@@ -1,5 +1,5 @@
 //
-//  MainVC.swift
+//  HomeVC.swift
 //  iDyslexic
 //
 //  Created by Иван Гевелев on 13.09.2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainVC: UIViewController {
+class HomeVC: UIViewController {
     @IBOutlet weak var gradient: UIImageView!
     @IBOutlet weak var navigationBar: UINavigationBar!
     

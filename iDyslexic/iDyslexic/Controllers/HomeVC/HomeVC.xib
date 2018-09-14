@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="iDyslexic" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="iDyslexic" customModuleProvider="target">
             <connections>
                 <outlet property="gradient" destination="fMb-Le-GNT" id="D5N-Pu-uX2"/>
                 <outlet property="navigationBar" destination="GFD-Rp-lAj" id="Y4A-VD-6Ge"/>

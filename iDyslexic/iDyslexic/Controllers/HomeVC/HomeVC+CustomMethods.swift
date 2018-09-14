@@ -1,5 +1,5 @@
 //
-//  MainVC+CustomMethods.swift
+//  HomeVC+CustomMethods.swift
 //  iDyslexic
 //
 //  Created by Иван Гевелев on 13.09.2018.
@@ -8,11 +8,8 @@
 
 import UIKit
 
-extension MainVC {
+extension HomeVC {
     func preparations() {
-        navigationController?.navigationBar.isHidden = true
-        navigationController?.navigationBar.barStyle = .blackOpaque
-        
         navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationBar.shadowImage = UIImage()
 
