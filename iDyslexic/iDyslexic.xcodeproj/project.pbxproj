@@ -14,6 +14,9 @@
 		FE787BB9214A9EB6009EFD88 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE787BB7214A9EB6009EFD88 /* HomeVC.swift */; };
 		FE787BBA214A9EB6009EFD88 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE787BB8214A9EB6009EFD88 /* HomeVC.xib */; };
 		FE787BBC214AA4A1009EFD88 /* HomeVC+CustomMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE787BBB214AA4A1009EFD88 /* HomeVC+CustomMethods.swift */; };
+		FE9D842F214F9EA700750A37 /* VerdanaPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE706A3D214BF31700D1060A /* VerdanaPro-SemiBold.ttf */; };
+		FE9D8430214F9EA900750A37 /* VerdanaPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE706A3E214BF31700D1060A /* VerdanaPro-Regular.ttf */; };
+		FE9D8431214F9EAB00750A37 /* VerdanaPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE706A3F214BF31700D1060A /* VerdanaPro-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -166,8 +169,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE9D842F214F9EA700750A37 /* VerdanaPro-SemiBold.ttf in Resources */,
 				FE787BAB214A9E1C009EFD88 /* Assets.xcassets in Resources */,
+				FE9D8431214F9EAB00750A37 /* VerdanaPro-Bold.ttf in Resources */,
 				FE787BBA214A9EB6009EFD88 /* HomeVC.xib in Resources */,
+				FE9D8430214F9EA900750A37 /* VerdanaPro-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

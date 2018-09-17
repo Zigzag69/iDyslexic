@@ -39,7 +39,14 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </textAttributes>
                     <items>
-                        <navigationItem title="iDyslexic" id="kKt-mV-amx"/>
+                        <navigationItem title="iDyslexic" id="kKt-mV-amx">
+                            <barButtonItem key="leftBarButtonItem" image="icInfoMenu" style="done" id="B5E-Iu-30W">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" image="icSearchMenuGrey" style="done" id="Tc0-Y4-oee">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </navigationItem>
                     </items>
                 </navigationBar>
             </subviews>
@@ -62,5 +69,7 @@
     </objects>
     <resources>
         <image name="gradient 1px" width="375" height="1"/>
+        <image name="icInfoMenu" width="24" height="24"/>
+        <image name="icSearchMenuGrey" width="24" height="24"/>
     </resources>
 </document>
