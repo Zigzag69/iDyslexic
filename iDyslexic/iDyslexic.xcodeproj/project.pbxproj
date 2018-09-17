@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FE706A38214BAC9700D1060A /* MainTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE706A36214BAC9700D1060A /* MainTBC.swift */; };
+		FE706A3B214BF18700D1060A /* MainTBC+CustomMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE706A3A214BF18700D1060A /* MainTBC+CustomMethods.swift */; };
 		FE787BA4214A9E1A009EFD88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE787BA3214A9E1A009EFD88 /* AppDelegate.swift */; };
 		FE787BAB214A9E1C009EFD88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE787BAA214A9E1C009EFD88 /* Assets.xcassets */; };
 		FE787BB9214A9EB6009EFD88 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE787BB7214A9EB6009EFD88 /* HomeVC.swift */; };
@@ -17,6 +18,10 @@
 
 /* Begin PBXFileReference section */
 		FE706A36214BAC9700D1060A /* MainTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTBC.swift; sourceTree = "<group>"; };
+		FE706A3A214BF18700D1060A /* MainTBC+CustomMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainTBC+CustomMethods.swift"; sourceTree = "<group>"; };
+		FE706A3D214BF31700D1060A /* VerdanaPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VerdanaPro-SemiBold.ttf"; sourceTree = "<group>"; };
+		FE706A3E214BF31700D1060A /* VerdanaPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VerdanaPro-Regular.ttf"; sourceTree = "<group>"; };
+		FE706A3F214BF31700D1060A /* VerdanaPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VerdanaPro-Bold.ttf"; sourceTree = "<group>"; };
 		FE787BA0214A9E1A009EFD88 /* iDyslexic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDyslexic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE787BA3214A9E1A009EFD88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE787BAA214A9E1C009EFD88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,8 +46,19 @@
 			isa = PBXGroup;
 			children = (
 				FE706A36214BAC9700D1060A /* MainTBC.swift */,
+				FE706A3A214BF18700D1060A /* MainTBC+CustomMethods.swift */,
 			);
 			path = MainTBC;
+			sourceTree = "<group>";
+		};
+		FE706A3C214BF2FB00D1060A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FE706A3F214BF31700D1060A /* VerdanaPro-Bold.ttf */,
+				FE706A3E214BF31700D1060A /* VerdanaPro-Regular.ttf */,
+				FE706A3D214BF31700D1060A /* VerdanaPro-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		FE787B97214A9E1A009EFD88 = {
@@ -66,6 +82,7 @@
 			children = (
 				FE787BA3214A9E1A009EFD88 /* AppDelegate.swift */,
 				FE787BB5214A9E9B009EFD88 /* Controllers */,
+				FE706A3C214BF2FB00D1060A /* Fonts */,
 				FE787BAA214A9E1C009EFD88 /* Assets.xcassets */,
 				FE787BAF214A9E1C009EFD88 /* Info.plist */,
 			);
@@ -163,6 +180,7 @@
 			files = (
 				FE787BA4214A9E1A009EFD88 /* AppDelegate.swift in Sources */,
 				FE787BBC214AA4A1009EFD88 /* HomeVC+CustomMethods.swift in Sources */,
+				FE706A3B214BF18700D1060A /* MainTBC+CustomMethods.swift in Sources */,
 				FE706A38214BAC9700D1060A /* MainTBC.swift in Sources */,
 				FE787BB9214A9EB6009EFD88 /* HomeVC.swift in Sources */,
 			);

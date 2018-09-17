@@ -12,9 +12,10 @@ class HomeVC: UIViewController {
     @IBOutlet weak var gradient: UIImageView!
     @IBOutlet weak var navigationBar: UINavigationBar!
     
+    //MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         preparations()
     }
 }
