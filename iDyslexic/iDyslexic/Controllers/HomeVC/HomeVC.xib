@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="gradient" destination="fMb-Le-GNT" id="D5N-Pu-uX2"/>
                 <outlet property="navigationBar" destination="GFD-Rp-lAj" id="Y4A-VD-6Ge"/>
+                <outlet property="tableView" destination="wb9-i3-Dck" id="Tfu-Sc-p7K"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,9 +26,9 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient 1px" translatesAutoresizingMaskIntoConstraints="NO" id="fMb-Le-GNT">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                 </imageView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wb9-i3-Dck">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="56" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="wb9-i3-Dck">
                     <rect key="frame" x="0.0" y="76" width="320" height="492"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="L8J-19-Ylf"/>
                         <outlet property="delegate" destination="-1" id="VPG-4p-7z5"/>
