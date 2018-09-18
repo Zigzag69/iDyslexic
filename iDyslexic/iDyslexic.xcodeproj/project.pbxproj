@@ -17,6 +17,9 @@
 		FE9D842F214F9EA700750A37 /* VerdanaPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE706A3D214BF31700D1060A /* VerdanaPro-SemiBold.ttf */; };
 		FE9D8430214F9EA900750A37 /* VerdanaPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE706A3E214BF31700D1060A /* VerdanaPro-Regular.ttf */; };
 		FE9D8431214F9EAB00750A37 /* VerdanaPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE706A3F214BF31700D1060A /* VerdanaPro-Bold.ttf */; };
+		FED82FCE2150F2E800B0E921 /* HomeVC+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED82FCD2150F2E800B0E921 /* HomeVC+UITableViewDelegate.swift */; };
+		FED82FD32150F53400B0E921 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED82FD12150F53400B0E921 /* TableViewCell.swift */; };
+		FED82FD42150F53400B0E921 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FED82FD22150F53400B0E921 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		FE787BB7214A9EB6009EFD88 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		FE787BB8214A9EB6009EFD88 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		FE787BBB214AA4A1009EFD88 /* HomeVC+CustomMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+CustomMethods.swift"; sourceTree = "<group>"; };
+		FED82FCD2150F2E800B0E921 /* HomeVC+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		FED82FD12150F53400B0E921 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FED82FD22150F53400B0E921 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				FE787BA3214A9E1A009EFD88 /* AppDelegate.swift */,
+				FED82FCF2150F39500B0E921 /* Views */,
 				FE787BB5214A9E9B009EFD88 /* Controllers */,
 				FE706A3C214BF2FB00D1060A /* Fonts */,
 				FE787BAA214A9E1C009EFD88 /* Assets.xcassets */,
@@ -107,8 +114,26 @@
 				FE787BB7214A9EB6009EFD88 /* HomeVC.swift */,
 				FE787BB8214A9EB6009EFD88 /* HomeVC.xib */,
 				FE787BBB214AA4A1009EFD88 /* HomeVC+CustomMethods.swift */,
+				FED82FCD2150F2E800B0E921 /* HomeVC+UITableViewDelegate.swift */,
 			);
 			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		FED82FCF2150F39500B0E921 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FED82FD02150F39D00B0E921 /* TableViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FED82FD02150F39D00B0E921 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FED82FD12150F53400B0E921 /* TableViewCell.swift */,
+				FED82FD22150F53400B0E921 /* TableViewCell.xib */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE9D842F214F9EA700750A37 /* VerdanaPro-SemiBold.ttf in Resources */,
+				FED82FD42150F53400B0E921 /* TableViewCell.xib in Resources */,
 				FE787BAB214A9E1C009EFD88 /* Assets.xcassets in Resources */,
 				FE9D8431214F9EAB00750A37 /* VerdanaPro-Bold.ttf in Resources */,
 				FE787BBA214A9EB6009EFD88 /* HomeVC.xib in Resources */,
@@ -186,8 +212,10 @@
 			files = (
 				FE787BA4214A9E1A009EFD88 /* AppDelegate.swift in Sources */,
 				FE787BBC214AA4A1009EFD88 /* HomeVC+CustomMethods.swift in Sources */,
+				FED82FCE2150F2E800B0E921 /* HomeVC+UITableViewDelegate.swift in Sources */,
 				FE706A3B214BF18700D1060A /* MainTBC+CustomMethods.swift in Sources */,
 				FE706A38214BAC9700D1060A /* MainTBC.swift in Sources */,
+				FED82FD32150F53400B0E921 /* TableViewCell.swift in Sources */,
 				FE787BB9214A9EB6009EFD88 /* HomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
