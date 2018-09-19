@@ -9,5 +9,9 @@
 import UIKit
 
 class SectionHeaderView: UITableViewCell {
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
 
+    }
 }

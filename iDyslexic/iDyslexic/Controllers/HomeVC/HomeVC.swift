@@ -11,7 +11,7 @@ import UIKit
 class HomeVC: UIViewController {
     @IBOutlet weak var gradient: UIImageView!
     @IBOutlet weak var navigationBar: UINavigationBar!
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableViewHomeVC: UITableView!
     
     //MARK: - Life cycle
     override func viewDidLoad() {

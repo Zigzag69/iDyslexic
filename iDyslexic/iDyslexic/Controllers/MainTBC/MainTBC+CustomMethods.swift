@@ -14,7 +14,6 @@ extension MainTBC {
         homeRoot.navigationBar.isHidden = true
         homeRoot.tabBarItem.image = #imageLiteral(resourceName: "icHomeMenu")
         homeRoot.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -6, 0)
-    
         let searchPeopleRoot = UINavigationController(rootViewController: UIViewController())
         searchPeopleRoot.tabBarItem.image = #imageLiteral(resourceName: "icSearchPpl")
         searchPeopleRoot.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -6, 0)

@@ -13,10 +13,6 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         return 5
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = Bundle.main.loadNibNamed("TableViewCell",
                                             owner: self,
@@ -25,12 +21,18 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
- 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = Bundle.main.loadNibNamed("SectionHeaderView",
                                               owner: self,
                                               options: nil)?.first as? SectionHeaderView
+        header?.layer.shadowColor = UIColor.lightGray.cgColor
+        header?.layer.shadowOpacity = 0.5
+        header?.layer.shadowOffset = CGSize.zero
+        header?.layer.shadowRadius = 5
         return header
     }
     

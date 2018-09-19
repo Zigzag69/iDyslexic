@@ -14,7 +14,7 @@
             <connections>
                 <outlet property="gradient" destination="fMb-Le-GNT" id="D5N-Pu-uX2"/>
                 <outlet property="navigationBar" destination="GFD-Rp-lAj" id="Y4A-VD-6Ge"/>
-                <outlet property="tableView" destination="wb9-i3-Dck" id="Tfu-Sc-p7K"/>
+                <outlet property="tableViewHomeVC" destination="wb9-i3-Dck" id="7DQ-wg-jBV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -28,7 +28,8 @@
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="56" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="wb9-i3-Dck">
                     <rect key="frame" x="0.0" y="76" width="320" height="492"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="L8J-19-Ylf"/>
                         <outlet property="delegate" destination="-1" id="VPG-4p-7z5"/>
@@ -55,7 +56,7 @@
                     </items>
                 </navigationBar>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fMb-Le-GNT" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="9lq-BO-NmV"/>
                 <constraint firstItem="fMb-Le-GNT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ABw-Ov-ZYY"/>
