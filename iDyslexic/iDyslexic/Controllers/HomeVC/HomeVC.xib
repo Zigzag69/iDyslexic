@@ -48,9 +48,15 @@
                         <navigationItem title="iDyslexic" id="kKt-mV-amx">
                             <barButtonItem key="leftBarButtonItem" image="icInfoMenu" style="done" id="B5E-Iu-30W">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="removeLastElement" destination="-1" id="dyB-Nt-Pjb"/>
+                                </connections>
                             </barButtonItem>
                             <barButtonItem key="rightBarButtonItem" image="icSearchMenuGrey" style="done" id="Tc0-Y4-oee">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="addElement" destination="-1" id="12L-I9-1DD"/>
+                                </connections>
                             </barButtonItem>
                         </navigationItem>
                     </items>

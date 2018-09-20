@@ -18,4 +18,8 @@ extension HomeVC {
         gradient.layer.shadowOpacity = 0.5
         gradient.layer.shadowOffset = CGSize(width: 0, height: 4)
     }
+    
+    func updateHeight() {
+        tableViewHomeVC.contentInset = UIEdgeInsetsMake(0, 0, -21, 0)
+    }
 }
