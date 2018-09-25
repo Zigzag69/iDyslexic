@@ -14,6 +14,6 @@ class TableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        contentView.frame = UIEdgeInsetsInsetRect(contentView.frame, UIEdgeInsetsMake(12, 0, 0, 0))
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets.init(top: 12, left: 0, bottom: 0, right: 0))
     }
 }
