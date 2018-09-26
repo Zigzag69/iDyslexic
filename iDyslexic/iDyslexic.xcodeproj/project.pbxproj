@@ -19,8 +19,6 @@
 		FE9D842F214F9EA700750A37 /* VerdanaPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE706A3D214BF31700D1060A /* VerdanaPro-SemiBold.ttf */; };
 		FE9D8430214F9EA900750A37 /* VerdanaPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE706A3E214BF31700D1060A /* VerdanaPro-Regular.ttf */; };
 		FE9D8431214F9EAB00750A37 /* VerdanaPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE706A3F214BF31700D1060A /* VerdanaPro-Bold.ttf */; };
-		FECCD5322153E8C00053D08E /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECCD5302153E8C00053D08E /* TableViewCell.xib */; };
-		FECCD5332153E8C00053D08E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECCD5312153E8C00053D08E /* TableViewCell.swift */; };
 		FECCD5362153E8F10053D08E /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECCD5342153E8F10053D08E /* TextTableViewCell.swift */; };
 		FECCD5372153E8F10053D08E /* TextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECCD5352153E8F10053D08E /* TextTableViewCell.xib */; };
 		FECCD53A2153E9100053D08E /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECCD5382153E9100053D08E /* ImageTableViewCell.swift */; };
@@ -47,8 +45,6 @@
 		FE787BB7214A9EB6009EFD88 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		FE787BB8214A9EB6009EFD88 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		FE787BBB214AA4A1009EFD88 /* HomeVC+CustomMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+CustomMethods.swift"; sourceTree = "<group>"; };
-		FECCD5302153E8C00053D08E /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		FECCD5312153E8C00053D08E /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		FECCD5342153E8F10053D08E /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
 		FECCD5352153E8F10053D08E /* TextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextTableViewCell.xib; sourceTree = "<group>"; };
 		FECCD5382153E9100053D08E /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
@@ -175,15 +171,6 @@
 			path = FilesTableViewCell;
 			sourceTree = "<group>";
 		};
-		FECCD52B2153E8610053D08E /* TableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				FECCD5312153E8C00053D08E /* TableViewCell.swift */,
-				FECCD5302153E8C00053D08E /* TableViewCell.xib */,
-			);
-			path = TableViewCell;
-			sourceTree = "<group>";
-		};
 		FED82FCF2150F39500B0E921 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,7 +179,6 @@
 				FECCD5202153E65A0053D08E /* ImageTableViewCell */,
 				FECCD5232153E6C80053D08E /* FilesTableViewCell */,
 				FECCD5212153E6800053D08E /* LinksTableViewCell */,
-				FECCD52B2153E8610053D08E /* TableViewCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -269,7 +255,6 @@
 				FE9D842F214F9EA700750A37 /* VerdanaPro-SemiBold.ttf in Resources */,
 				FE787BAB214A9E1C009EFD88 /* Assets.xcassets in Resources */,
 				FECCD53F2153E9250053D08E /* FilesTableViewCell.xib in Resources */,
-				FECCD5322153E8C00053D08E /* TableViewCell.xib in Resources */,
 				FE9D8431214F9EAB00750A37 /* VerdanaPro-Bold.ttf in Resources */,
 				FECCD5432153E9380053D08E /* LinksTableViewCell.xib in Resources */,
 				FE787BBA214A9EB6009EFD88 /* HomeVC.xib in Resources */,
@@ -288,7 +273,6 @@
 			files = (
 				FECCD5362153E8F10053D08E /* TextTableViewCell.swift in Sources */,
 				FE787BA4214A9E1A009EFD88 /* AppDelegate.swift in Sources */,
-				FECCD5332153E8C00053D08E /* TableViewCell.swift in Sources */,
 				FECCD53E2153E9250053D08E /* FilesTableViewCell.swift in Sources */,
 				FE787BBC214AA4A1009EFD88 /* HomeVC+CustomMethods.swift in Sources */,
 				FE57864C2151255800E99C7C /* SectionHeaderView.swift in Sources */,

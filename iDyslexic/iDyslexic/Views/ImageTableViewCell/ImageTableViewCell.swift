@@ -9,8 +9,14 @@
 import UIKit
 
 class ImageTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
+//    @IBOutlet weak var imageTableViewCell: UIImageView!
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets.init(top: 12,
+                                                                          left: 0,
+                                                                          bottom: 0,
+                                                                          right: 0))
     }
 }

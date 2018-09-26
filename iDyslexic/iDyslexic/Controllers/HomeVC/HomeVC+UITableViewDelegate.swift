@@ -14,15 +14,19 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = Bundle.main.loadNibNamed("TableViewCell",
+        let cell = Bundle.main.loadNibNamed("ImageTableViewCell",
                                             owner: self,
-                                            options: nil)?.first as! TableViewCell
-        cell.imageTableViewCell.image = #imageLiteral(resourceName: "icTestImage1")
+                                            options: nil)?.first as! ImageTableViewCell
+//        cell.imageTableViewCell.image = #imageLiteral(resourceName: "icTestImage1")
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 400
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
