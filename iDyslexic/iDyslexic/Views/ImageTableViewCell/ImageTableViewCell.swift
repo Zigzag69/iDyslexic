@@ -9,7 +9,7 @@
 import UIKit
 
 class ImageTableViewCell: UITableViewCell {
-//    @IBOutlet weak var imageTableViewCell: UIImageView!
+    @IBOutlet weak var imageTableViewCell: UIImageView!
     
     override func layoutSubviews() {
         super.layoutSubviews()

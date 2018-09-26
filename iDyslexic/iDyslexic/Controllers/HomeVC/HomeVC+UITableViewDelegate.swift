@@ -17,7 +17,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         let cell = Bundle.main.loadNibNamed("ImageTableViewCell",
                                             owner: self,
                                             options: nil)?.first as! ImageTableViewCell
-//        cell.imageTableViewCell.image = #imageLiteral(resourceName: "icTestImage1")
+        cell.imageTableViewCell.image = #imageLiteral(resourceName: "icTestImage1")
         return cell
     }
     
