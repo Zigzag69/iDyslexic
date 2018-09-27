@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84F2B90B215CFE86001F8BB3 /* videoTest.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 84F2B90A215CFE86001F8BB3 /* videoTest.mp4 */; };
 		FE57864C2151255800E99C7C /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE57864A2151255800E99C7C /* SectionHeaderView.swift */; };
 		FE57864D2151255800E99C7C /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE57864B2151255800E99C7C /* SectionHeaderView.xib */; };
 		FE706A38214BAC9700D1060A /* MainTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE706A36214BAC9700D1060A /* MainTBC.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84F2B90A215CFE86001F8BB3 /* videoTest.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoTest.mp4; sourceTree = "<group>"; };
 		FE57864A2151255800E99C7C /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		FE57864B2151255800E99C7C /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
 		FE706A36214BAC9700D1060A /* MainTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTBC.swift; sourceTree = "<group>"; };
@@ -67,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84F2B909215CFE5B001F8BB3 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				84F2B90A215CFE86001F8BB3 /* videoTest.mp4 */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
 		FE706A35214BAC7A00D1060A /* MainTBC */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 				FE787BA3214A9E1A009EFD88 /* AppDelegate.swift */,
 				FED82FCF2150F39500B0E921 /* Views */,
 				FE787BB5214A9E9B009EFD88 /* Controllers */,
+				84F2B909215CFE5B001F8BB3 /* Video */,
 				FE706A3C214BF2FB00D1060A /* Fonts */,
 				FE787BAA214A9E1C009EFD88 /* Assets.xcassets */,
 				FE787BAF214A9E1C009EFD88 /* Info.plist */,
@@ -261,6 +272,7 @@
 				FE9D8430214F9EA900750A37 /* VerdanaPro-Regular.ttf in Resources */,
 				FECCD5372153E8F10053D08E /* TextTableViewCell.xib in Resources */,
 				FE57864D2151255800E99C7C /* SectionHeaderView.xib in Resources */,
+				84F2B90B215CFE86001F8BB3 /* videoTest.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
