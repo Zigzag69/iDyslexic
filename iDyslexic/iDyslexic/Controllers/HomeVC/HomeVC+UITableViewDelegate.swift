@@ -18,15 +18,16 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = Bundle.main.loadNibNamed("ImageTableViewCell",
+        let cell = Bundle.main.loadNibNamed("TextTableViewCell",
                                             owner: self,
-                                            options: nil)?.first as! ImageTableViewCell
-        cell.imageTableViewCell.image = #imageLiteral(resourceName: "icTestImage1")
+                                            options: nil)?.first as! TextTableViewCell
+//        cell.imageTableViewCell.image = #imageLiteral(resourceName: "icTestImage1")
+        cell.labelTableViewCell.text = "Подписка даёт возможность слушать музыку без аудиорекламы на компьютере и в мобильных устройствах, а также сохранять аудиозаписи в приложении BOOM и слушать их без подключения к интернету."
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return 320
+            return 180
         }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
