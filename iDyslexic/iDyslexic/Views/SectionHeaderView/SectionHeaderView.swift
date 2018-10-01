@@ -9,6 +9,7 @@
 import UIKit
 
 class SectionHeaderView: UITableViewCell {
+    @IBOutlet weak var viewSectionHeader: UIView!
     
     override func layoutSubviews() {
         super.layoutSubviews()
