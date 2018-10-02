@@ -14,6 +14,8 @@ class HomeVC: UIViewController {
     @IBOutlet weak var tableViewHomeVC: UITableView!
     
     var container = [#imageLiteral(resourceName: "icTestImage1"), #imageLiteral(resourceName: "icTestImage1"), #imageLiteral(resourceName: "icTestImage1"), #imageLiteral(resourceName: "icTestImage1"), #imageLiteral(resourceName: "icTestImage1")]
+    let isHorizontalImageHeight = UIScreen.main.bounds.size.width / 4 * 3
+    let isVerticalImageHeight = UIScreen.main.bounds.size.width / 3 * 4
     
 //MARK: - Life cycle
     override func viewDidLoad() {
@@ -21,6 +23,7 @@ class HomeVC: UIViewController {
         
         preparations()
         updateHeight()
+        generation()
     }
     
 //MARK: - IBActions

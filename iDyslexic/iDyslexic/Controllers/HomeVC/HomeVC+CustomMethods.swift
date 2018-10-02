@@ -22,4 +22,11 @@ extension HomeVC {
     func updateHeight() {
         tableViewHomeVC.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: -21, right: 0)
     }
+    
+    func generation() {
+//        #imageLiteral(resourceName: "icTestImage1")
+        print("isHorizontalImageHeight = \(isHorizontalImageHeight)")
+        print("isVerticalImageHeight = \(isVerticalImageHeight)")
+        print("size height = \(#imageLiteral(resourceName: "icTestImageHorizontal3").size.height)")
+    }
 }
