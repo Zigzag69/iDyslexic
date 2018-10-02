@@ -21,14 +21,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="510" id="Vgm-wc-d65" customClass="TextTableViewCell" customModule="iDyslexic" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="380" height="180"/>
+            <rect key="frame" x="0.0" y="0.0" width="380" height="192"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vgm-wc-d65" id="HGX-Ax-ndA">
-                <rect key="frame" x="0.0" y="0.0" width="380" height="179.5"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="Vgm-wc-d65" id="HGX-Ax-ndA">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="191.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBH-Kv-eFk">
-                        <rect key="frame" x="0.0" y="0.0" width="380" height="179.5"/>
+                        <rect key="frame" x="0.0" y="12.5" width="380" height="180"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4O-GR-5Y8">
                                 <rect key="frame" x="0.0" y="0.0" width="380" height="68"/>
@@ -86,10 +86,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPw-sH-ryw">
-                                <rect key="frame" x="0.0" y="68" width="380" height="59.5"/>
+                                <rect key="frame" x="0.0" y="68" width="380" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have been questioned by many people to disclose some of the greatest traffic generating techniques that I know of." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2e-db-Yaa">
-                                        <rect key="frame" x="16" y="0.0" width="348" height="59.5"/>
+                                        <rect key="frame" x="16" y="0.0" width="348" height="60"/>
                                         <fontDescription key="fontDescription" name="VerdanaPro-Regular" family="Verdana Pro" pointSize="14"/>
                                         <color key="textColor" red="0.1960784314" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -104,7 +104,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgS-FH-hcc">
-                                <rect key="frame" x="0.0" y="127.5" width="380" height="52"/>
+                                <rect key="frame" x="0.0" y="128" width="380" height="52"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icLikePass" translatesAutoresizingMaskIntoConstraints="NO" id="cVf-Q3-1j8">
                                         <rect key="frame" x="16" y="14" width="24" height="24"/>
@@ -190,6 +190,7 @@
                             <constraint firstItem="mPw-sH-ryw" firstAttribute="top" secondItem="m4O-GR-5Y8" secondAttribute="bottom" id="HGs-tV-dR4"/>
                             <constraint firstAttribute="trailing" secondItem="m4O-GR-5Y8" secondAttribute="trailing" id="LWo-t2-Tcn"/>
                             <constraint firstAttribute="trailing" secondItem="mPw-sH-ryw" secondAttribute="trailing" id="ebI-mN-cpB"/>
+                            <constraint firstAttribute="height" constant="180" id="lVX-RX-scS"/>
                             <constraint firstItem="mPw-sH-ryw" firstAttribute="leading" secondItem="gBH-Kv-eFk" secondAttribute="leading" id="nit-nL-7tu"/>
                             <constraint firstItem="m4O-GR-5Y8" firstAttribute="leading" secondItem="gBH-Kv-eFk" secondAttribute="leading" id="rK8-vG-D6M"/>
                             <constraint firstItem="m4O-GR-5Y8" firstAttribute="top" secondItem="gBH-Kv-eFk" secondAttribute="top" id="vuI-Iu-rUd"/>
@@ -197,10 +198,11 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
-                    <constraint firstItem="gBH-Kv-eFk" firstAttribute="top" secondItem="HGX-Ax-ndA" secondAttribute="top" id="0E4-hV-3iI"/>
+                    <constraint firstItem="gBH-Kv-eFk" firstAttribute="top" secondItem="HGX-Ax-ndA" secondAttribute="top" constant="12" id="0E4-hV-3iI"/>
                     <constraint firstAttribute="trailing" secondItem="gBH-Kv-eFk" secondAttribute="trailing" id="1tq-Nu-tZw"/>
-                    <constraint firstAttribute="bottom" secondItem="gBH-Kv-eFk" secondAttribute="bottom" id="DSs-LZ-LM1"/>
+                    <constraint firstAttribute="bottom" secondItem="gBH-Kv-eFk" secondAttribute="bottom" id="B8E-cF-faZ"/>
                     <constraint firstItem="gBH-Kv-eFk" firstAttribute="leading" secondItem="HGX-Ax-ndA" secondAttribute="leading" id="pf7-cT-w7h"/>
                 </constraints>
             </tableViewCellContentView>
