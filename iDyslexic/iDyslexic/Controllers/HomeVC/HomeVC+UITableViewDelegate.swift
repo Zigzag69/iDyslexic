@@ -10,7 +10,7 @@ import UIKit
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return containerTypes.count
+        return containerGeneratedTypes.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -18,12 +18,12 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if containerTypes[indexPath.row] == "Text" {
+        if containerGeneratedTypes[indexPath.row] == "Text" {
             let cell = Bundle.main.loadNibNamed("TextTableViewCell",
                                                 owner: self,
                                                 options: nil)?.first as! TextTableViewCell
             return cell
-        } else if containerTypes[indexPath.row] == "Image" {
+        } else if containerGeneratedTypes[indexPath.row] == "Image" {
             let cell = Bundle.main.loadNibNamed("ImageTableViewCell",
                                                 owner: self,
                                                 options: nil)?.first as! ImageTableViewCell
@@ -36,17 +36,17 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
                 cell.viewHeightTableViewCell.constant = UIScreen.main.bounds.size.width
             }
             return cell
-        } else if containerTypes[indexPath.row] == "Video" {
+        } else if containerGeneratedTypes[indexPath.row] == "Video" {
             let cell = Bundle.main.loadNibNamed("VideoTableViewCell",
                                                 owner: self,
                                                 options: nil)?.first as! VideoTableViewCell
             return cell
-        } else if containerTypes[indexPath.row] == "Attachments" {
-            let cell = Bundle.main.loadNibNamed("AttachmentsTableViewCell",
+        } else if containerGeneratedTypes[indexPath.row] == "Text+Attachments" {
+            let cell = Bundle.main.loadNibNamed("TextAttachmentsTableViewCell",
                                                 owner: self,
-                                                options: nil)?.first as! AttachmentsTableViewCell
+                                            options: nil)?.first as! TextAttachmentsTableViewCell
             return cell
-        } else if containerTypes[indexPath.row] == "Links" {
+        } else if containerGeneratedTypes[indexPath.row] == "Links" {
             let cell = Bundle.main.loadNibNamed("LinksTableViewCell",
                                                 owner: self,
                                                 options: nil)?.first as! LinksTableViewCell
@@ -60,9 +60,9 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if containerTypes[indexPath.row] == "Text" {
+        if containerGeneratedTypes[indexPath.row] == "Text" {
             return 192
-        } else if containerTypes[indexPath.row] == "Image" {
+        } else if containerGeneratedTypes[indexPath.row] == "Image" {
             if #imageLiteral(resourceName: "icTestImage1").size.height > #imageLiteral(resourceName: "icTestImage1").size.width {
                 return 132 + isVerticalImageHeight
             } else if #imageLiteral(resourceName: "icTestImage1").size.height < #imageLiteral(resourceName: "icTestImage1").size.width {
@@ -70,11 +70,11 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
             } else {
                 return 132 +  UIScreen.main.bounds.size.width
             }
-        } else if containerTypes[indexPath.row] == "Video" {
+        } else if containerGeneratedTypes[indexPath.row] == "Video" {
             return 332
-        } else if containerTypes[indexPath.row] == "Attachments" {
+        } else if containerGeneratedTypes[indexPath.row] == "Text+Attachments" {
             return 280
-        } else if containerTypes[indexPath.row] == "Links" {
+        } else if containerGeneratedTypes[indexPath.row] == "Links" {
             return 450
         } else {
             return 10

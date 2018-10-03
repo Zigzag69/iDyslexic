@@ -1,5 +1,5 @@
 //
-//  AttachmentsTableViewCell.swift
+//  Attachments+TextTableViewCell.swift
 //  iDyslexic
 //
 //  Created by Admin on 03.10.2018.
@@ -8,9 +8,10 @@
 
 import UIKit
 
-class AttachmentsTableViewCell: UITableViewCell {
+class TextAttachmentsTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-    }
+
+    }    
 }

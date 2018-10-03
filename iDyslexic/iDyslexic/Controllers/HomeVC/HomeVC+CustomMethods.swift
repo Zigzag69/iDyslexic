@@ -25,6 +25,10 @@ extension HomeVC {
     }
     
     func generation() {
-        print("Сгенерировано \(numberOfCells) ячеек в таблице")
+        print("Сгененировано \(generatedNumberOfCells) ячеек")
+        for _ in 0..<generatedNumberOfCells {
+            containerGeneratedTypes.append(containerTypes.randomElement()!)
+        }
+        print("Сгенерированы такие типы ячеек: \(containerGeneratedTypes)")
     }
 }
