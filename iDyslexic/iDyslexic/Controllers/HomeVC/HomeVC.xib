@@ -26,7 +26,7 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient 1px" translatesAutoresizingMaskIntoConstraints="NO" id="fMb-Le-GNT">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                 </imageView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="56" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="wb9-i3-Dck">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="68" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="wb9-i3-Dck">
                     <rect key="frame" x="0.0" y="76" width="320" height="492"/>
                     <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <color key="sectionIndexBackgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

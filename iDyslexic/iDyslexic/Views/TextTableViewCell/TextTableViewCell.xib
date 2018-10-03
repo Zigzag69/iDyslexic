@@ -27,14 +27,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="380" height="191.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBH-Kv-eFk">
-                        <rect key="frame" x="0.0" y="12.5" width="380" height="180"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBH-Kv-eFk" userLabel="Main View">
+                        <rect key="frame" x="0.0" y="0.0" width="380" height="180.5"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4O-GR-5Y8">
-                                <rect key="frame" x="0.0" y="0.0" width="380" height="68"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4O-GR-5Y8" userLabel="Top View User Info">
+                                <rect key="frame" x="0.0" y="0.0" width="380" height="68.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icTestImage2" translatesAutoresizingMaskIntoConstraints="NO" id="S1h-OO-sE4">
-                                        <rect key="frame" x="16" y="12" width="40" height="40"/>
+                                        <rect key="frame" x="16" y="12.5" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="83V-EE-Tal"/>
                                             <constraint firstAttribute="width" constant="40" id="zqp-aw-qG5"/>
@@ -47,7 +47,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Theodore Pittman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcA-i5-kJi">
-                                        <rect key="frame" x="68" y="12" width="133.5" height="20"/>
+                                        <rect key="frame" x="68" y="12.5" width="133.5" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="QVx-m5-yNK"/>
                                         </constraints>
@@ -56,7 +56,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 nov. at 10:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cam-c0-3pA">
-                                        <rect key="frame" x="68" y="32" width="118.5" height="20"/>
+                                        <rect key="frame" x="68" y="32.5" width="118.5" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="rfg-1J-GVk"/>
                                         </constraints>
@@ -65,7 +65,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icMoreHorGr" translatesAutoresizingMaskIntoConstraints="NO" id="wTc-NP-IId">
-                                        <rect key="frame" x="340" y="12" width="24" height="24"/>
+                                        <rect key="frame" x="340" y="12.5" width="24" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="1pG-fv-j5B"/>
                                             <constraint firstAttribute="width" constant="24" id="eHf-Oe-0Ux"/>
@@ -85,8 +85,8 @@
                                     <constraint firstItem="S1h-OO-sE4" firstAttribute="leading" secondItem="m4O-GR-5Y8" secondAttribute="leading" constant="16" id="x9f-vp-1ad"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPw-sH-ryw">
-                                <rect key="frame" x="0.0" y="68" width="380" height="60"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPw-sH-ryw" userLabel="Middle View Text">
+                                <rect key="frame" x="0.0" y="68.5" width="380" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have been questioned by many people to disclose some of the greatest traffic generating techniques that I know of." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2e-db-Yaa">
                                         <rect key="frame" x="16" y="0.0" width="348" height="60"/>
@@ -103,8 +103,8 @@
                                     <constraint firstItem="I2e-db-Yaa" firstAttribute="top" secondItem="mPw-sH-ryw" secondAttribute="top" id="kQJ-ei-V87"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgS-FH-hcc">
-                                <rect key="frame" x="0.0" y="128" width="380" height="52"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgS-FH-hcc" userLabel="Bottom View Feedback">
+                                <rect key="frame" x="0.0" y="128.5" width="380" height="52"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icLikePass" translatesAutoresizingMaskIntoConstraints="NO" id="cVf-Q3-1j8">
                                         <rect key="frame" x="16" y="14" width="24" height="24"/>
@@ -200,9 +200,9 @@
                 </subviews>
                 <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
-                    <constraint firstItem="gBH-Kv-eFk" firstAttribute="top" secondItem="HGX-Ax-ndA" secondAttribute="top" constant="12" id="0E4-hV-3iI"/>
+                    <constraint firstItem="gBH-Kv-eFk" firstAttribute="top" secondItem="HGX-Ax-ndA" secondAttribute="top" id="0E4-hV-3iI"/>
                     <constraint firstAttribute="trailing" secondItem="gBH-Kv-eFk" secondAttribute="trailing" id="1tq-Nu-tZw"/>
-                    <constraint firstAttribute="bottom" secondItem="gBH-Kv-eFk" secondAttribute="bottom" id="B8E-cF-faZ"/>
+                    <constraint firstAttribute="bottom" secondItem="gBH-Kv-eFk" secondAttribute="bottom" constant="12" id="B8E-cF-faZ"/>
                     <constraint firstItem="gBH-Kv-eFk" firstAttribute="leading" secondItem="HGX-Ax-ndA" secondAttribute="leading" id="pf7-cT-w7h"/>
                 </constraints>
             </tableViewCellContentView>

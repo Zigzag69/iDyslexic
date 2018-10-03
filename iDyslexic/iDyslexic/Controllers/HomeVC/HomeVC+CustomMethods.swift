@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVKit
 
 extension HomeVC {
     func preparations() {

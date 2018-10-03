@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		843FC7452163AFB600051F13 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FC7432163AFB600051F13 /* VideoTableViewCell.swift */; };
+		843FC7462163AFB600051F13 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843FC7442163AFB600051F13 /* VideoTableViewCell.xib */; };
 		84F2B90B215CFE86001F8BB3 /* videoTest.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 84F2B90A215CFE86001F8BB3 /* videoTest.mp4 */; };
 		FE57864C2151255800E99C7C /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE57864A2151255800E99C7C /* SectionHeaderView.swift */; };
 		FE57864D2151255800E99C7C /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE57864B2151255800E99C7C /* SectionHeaderView.xib */; };
@@ -32,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		843FC7432163AFB600051F13 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		843FC7442163AFB600051F13 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
 		84F2B90A215CFE86001F8BB3 /* videoTest.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoTest.mp4; sourceTree = "<group>"; };
 		FE57864A2151255800E99C7C /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		FE57864B2151255800E99C7C /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
@@ -69,6 +73,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		843FC7422163AF8B00051F13 /* VideoTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				843FC7432163AFB600051F13 /* VideoTableViewCell.swift */,
+				843FC7442163AFB600051F13 /* VideoTableViewCell.xib */,
+			);
+			path = VideoTableViewCell;
+			sourceTree = "<group>";
+		};
 		84F2B909215CFE5B001F8BB3 /* Video */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +201,7 @@
 				FED82FD52150FA3900B0E921 /* SectionHeaderView */,
 				FECCD5222153E6920053D08E /* TextTableViewCell */,
 				FECCD5202153E65A0053D08E /* ImageTableViewCell */,
+				843FC7422163AF8B00051F13 /* VideoTableViewCell */,
 				FECCD5232153E6C80053D08E /* FilesTableViewCell */,
 				FECCD5212153E6800053D08E /* LinksTableViewCell */,
 			);
@@ -267,6 +281,7 @@
 				FE787BAB214A9E1C009EFD88 /* Assets.xcassets in Resources */,
 				FECCD53F2153E9250053D08E /* FilesTableViewCell.xib in Resources */,
 				FE9D8431214F9EAB00750A37 /* VerdanaPro-Bold.ttf in Resources */,
+				843FC7462163AFB600051F13 /* VideoTableViewCell.xib in Resources */,
 				FECCD5432153E9380053D08E /* LinksTableViewCell.xib in Resources */,
 				FE787BBA214A9EB6009EFD88 /* HomeVC.xib in Resources */,
 				FE9D8430214F9EA900750A37 /* VerdanaPro-Regular.ttf in Resources */,
@@ -288,6 +303,7 @@
 				FECCD53E2153E9250053D08E /* FilesTableViewCell.swift in Sources */,
 				FE787BBC214AA4A1009EFD88 /* HomeVC+CustomMethods.swift in Sources */,
 				FE57864C2151255800E99C7C /* SectionHeaderView.swift in Sources */,
+				843FC7452163AFB600051F13 /* VideoTableViewCell.swift in Sources */,
 				FED82FCE2150F2E800B0E921 /* HomeVC+UITableViewDelegate.swift in Sources */,
 				FE706A3B214BF18700D1060A /* MainTBC+CustomMethods.swift in Sources */,
 				FECCD53A2153E9100053D08E /* ImageTableViewCell.swift in Sources */,

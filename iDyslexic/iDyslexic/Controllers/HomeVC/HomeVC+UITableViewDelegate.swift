@@ -29,7 +29,6 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         } else {
             cell.viewHeightTableViewCell.constant = UIScreen.main.bounds.size.width
         }
-//        cell.labelTableViewCell.text = "I have been questioned by many people to disclose some of the greatest traffic generating techniques that I know of. I have been questioned by many people to disclose some of the greatest traffic generating techniques that I know of."
         return cell
     }
     
@@ -55,6 +54,6 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 56
+        return 68
     }
 }
