@@ -25,9 +25,7 @@ extension HomeVC {
     }
     
     func generation() {
-//        #imageLiteral(resourceName: "icTestImage1")
-        print("isHorizontalImageHeight = \(isHorizontalImageHeight)")
-        print("isVerticalImageHeight = \(isVerticalImageHeight)")
-        print("size height = \(#imageLiteral(resourceName: "icTestImageHorizontal3").size.height)")
+        print("Сгенерировано \(numberOfCells) ячеек в таблице")
+//        print(containerTypes.randomElement(using: &numberOfCells))
     }
 }

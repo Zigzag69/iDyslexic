@@ -10,7 +10,7 @@ import UIKit
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return container.count
+        return numberOfCells
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -18,28 +18,29 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = Bundle.main.loadNibNamed("ImageTableViewCell",
+        let cell = Bundle.main.loadNibNamed("LinksTableViewCell",
                                             owner: self,
-                                            options: nil)?.first as! ImageTableViewCell
-        cell.imageTableViewCell.image = #imageLiteral(resourceName: "icTestImage1")
-        if #imageLiteral(resourceName: "icTestImage1").size.height > #imageLiteral(resourceName: "icTestImage1").size.width {
-            cell.viewHeightTableViewCell.constant = isVerticalImageHeight
-        } else if #imageLiteral(resourceName: "icTestImage1").size.height < #imageLiteral(resourceName: "icTestImage1").size.width {
-            cell.viewHeightTableViewCell.constant = isHorizontalImageHeight
-        } else {
-            cell.viewHeightTableViewCell.constant = UIScreen.main.bounds.size.width
-        }
+                                            options: nil)?.first as! LinksTableViewCell
+//        cell.imageTableViewCell.image = #imageLiteral(resourceName: "icTestImage1")
+//        if #imageLiteral(resourceName: "icTestImage1").size.height > #imageLiteral(resourceName: "icTestImage1").size.width {
+//            cell.viewHeightTableViewCell.constant = isVerticalImageHeight
+//        } else if #imageLiteral(resourceName: "icTestImage1").size.height < #imageLiteral(resourceName: "icTestImage1").size.width {
+//            cell.viewHeightTableViewCell.constant = isHorizontalImageHeight
+//        } else {
+//            cell.viewHeightTableViewCell.constant = UIScreen.main.bounds.size.width
+//        }
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if #imageLiteral(resourceName: "icTestImage1").size.height > #imageLiteral(resourceName: "icTestImage1").size.width {
-            return 132 + isVerticalImageHeight
-        } else if #imageLiteral(resourceName: "icTestImage1").size.height < #imageLiteral(resourceName: "icTestImage1").size.width {
-            return 132 + isHorizontalImageHeight
-        } else {
-            return 132 +  UIScreen.main.bounds.size.width
-        }
+//        if #imageLiteral(resourceName: "icTestImage1").size.height > #imageLiteral(resourceName: "icTestImage1").size.width {
+//            return 132 + isVerticalImageHeight
+//        } else if #imageLiteral(resourceName: "icTestImage1").size.height < #imageLiteral(resourceName: "icTestImage1").size.width {
+//            return 132 + isHorizontalImageHeight
+//        } else {
+//            return 132 +  UIScreen.main.bounds.size.width
+//        }
+        return 450
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		843FC7452163AFB600051F13 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FC7432163AFB600051F13 /* VideoTableViewCell.swift */; };
 		843FC7462163AFB600051F13 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843FC7442163AFB600051F13 /* VideoTableViewCell.xib */; };
+		84D243082164ED8F000083C3 /* AttachmentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D243062164ED8F000083C3 /* AttachmentsTableViewCell.swift */; };
+		84D243092164ED8F000083C3 /* AttachmentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D243072164ED8F000083C3 /* AttachmentsTableViewCell.xib */; };
 		84F2B90B215CFE86001F8BB3 /* videoTest.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 84F2B90A215CFE86001F8BB3 /* videoTest.mp4 */; };
 		FE57864C2151255800E99C7C /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE57864A2151255800E99C7C /* SectionHeaderView.swift */; };
 		FE57864D2151255800E99C7C /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE57864B2151255800E99C7C /* SectionHeaderView.xib */; };
@@ -26,8 +28,6 @@
 		FECCD5372153E8F10053D08E /* TextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECCD5352153E8F10053D08E /* TextTableViewCell.xib */; };
 		FECCD53A2153E9100053D08E /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECCD5382153E9100053D08E /* ImageTableViewCell.swift */; };
 		FECCD53B2153E9100053D08E /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECCD5392153E9100053D08E /* ImageTableViewCell.xib */; };
-		FECCD53E2153E9250053D08E /* FilesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECCD53C2153E9250053D08E /* FilesTableViewCell.swift */; };
-		FECCD53F2153E9250053D08E /* FilesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECCD53D2153E9250053D08E /* FilesTableViewCell.xib */; };
 		FECCD5422153E9380053D08E /* LinksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECCD5402153E9380053D08E /* LinksTableViewCell.swift */; };
 		FECCD5432153E9380053D08E /* LinksTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECCD5412153E9380053D08E /* LinksTableViewCell.xib */; };
 		FED82FCE2150F2E800B0E921 /* HomeVC+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED82FCD2150F2E800B0E921 /* HomeVC+UITableViewDelegate.swift */; };
@@ -36,6 +36,8 @@
 /* Begin PBXFileReference section */
 		843FC7432163AFB600051F13 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		843FC7442163AFB600051F13 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
+		84D243062164ED8F000083C3 /* AttachmentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentsTableViewCell.swift; sourceTree = "<group>"; };
+		84D243072164ED8F000083C3 /* AttachmentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttachmentsTableViewCell.xib; sourceTree = "<group>"; };
 		84F2B90A215CFE86001F8BB3 /* videoTest.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoTest.mp4; sourceTree = "<group>"; };
 		FE57864A2151255800E99C7C /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		FE57864B2151255800E99C7C /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
@@ -55,8 +57,6 @@
 		FECCD5352153E8F10053D08E /* TextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextTableViewCell.xib; sourceTree = "<group>"; };
 		FECCD5382153E9100053D08E /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		FECCD5392153E9100053D08E /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
-		FECCD53C2153E9250053D08E /* FilesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesTableViewCell.swift; sourceTree = "<group>"; };
-		FECCD53D2153E9250053D08E /* FilesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilesTableViewCell.xib; sourceTree = "<group>"; };
 		FECCD5402153E9380053D08E /* LinksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksTableViewCell.swift; sourceTree = "<group>"; };
 		FECCD5412153E9380053D08E /* LinksTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinksTableViewCell.xib; sourceTree = "<group>"; };
 		FED82FCD2150F2E800B0E921 /* HomeVC+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+UITableViewDelegate.swift"; sourceTree = "<group>"; };
@@ -80,6 +80,15 @@
 				843FC7442163AFB600051F13 /* VideoTableViewCell.xib */,
 			);
 			path = VideoTableViewCell;
+			sourceTree = "<group>";
+		};
+		84D243052164ED77000083C3 /* AttachmentsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				84D243062164ED8F000083C3 /* AttachmentsTableViewCell.swift */,
+				84D243072164ED8F000083C3 /* AttachmentsTableViewCell.xib */,
+			);
+			path = AttachmentsTableViewCell;
 			sourceTree = "<group>";
 		};
 		84F2B909215CFE5B001F8BB3 /* Video */ = {
@@ -186,15 +195,6 @@
 			path = TextTableViewCell;
 			sourceTree = "<group>";
 		};
-		FECCD5232153E6C80053D08E /* FilesTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				FECCD53C2153E9250053D08E /* FilesTableViewCell.swift */,
-				FECCD53D2153E9250053D08E /* FilesTableViewCell.xib */,
-			);
-			path = FilesTableViewCell;
-			sourceTree = "<group>";
-		};
 		FED82FCF2150F39500B0E921 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,7 +202,7 @@
 				FECCD5222153E6920053D08E /* TextTableViewCell */,
 				FECCD5202153E65A0053D08E /* ImageTableViewCell */,
 				843FC7422163AF8B00051F13 /* VideoTableViewCell */,
-				FECCD5232153E6C80053D08E /* FilesTableViewCell */,
+				84D243052164ED77000083C3 /* AttachmentsTableViewCell */,
 				FECCD5212153E6800053D08E /* LinksTableViewCell */,
 			);
 			path = Views;
@@ -279,12 +279,12 @@
 				FECCD53B2153E9100053D08E /* ImageTableViewCell.xib in Resources */,
 				FE9D842F214F9EA700750A37 /* VerdanaPro-SemiBold.ttf in Resources */,
 				FE787BAB214A9E1C009EFD88 /* Assets.xcassets in Resources */,
-				FECCD53F2153E9250053D08E /* FilesTableViewCell.xib in Resources */,
 				FE9D8431214F9EAB00750A37 /* VerdanaPro-Bold.ttf in Resources */,
 				843FC7462163AFB600051F13 /* VideoTableViewCell.xib in Resources */,
 				FECCD5432153E9380053D08E /* LinksTableViewCell.xib in Resources */,
 				FE787BBA214A9EB6009EFD88 /* HomeVC.xib in Resources */,
 				FE9D8430214F9EA900750A37 /* VerdanaPro-Regular.ttf in Resources */,
+				84D243092164ED8F000083C3 /* AttachmentsTableViewCell.xib in Resources */,
 				FECCD5372153E8F10053D08E /* TextTableViewCell.xib in Resources */,
 				FE57864D2151255800E99C7C /* SectionHeaderView.xib in Resources */,
 				84F2B90B215CFE86001F8BB3 /* videoTest.mp4 in Resources */,
@@ -300,13 +300,13 @@
 			files = (
 				FECCD5362153E8F10053D08E /* TextTableViewCell.swift in Sources */,
 				FE787BA4214A9E1A009EFD88 /* AppDelegate.swift in Sources */,
-				FECCD53E2153E9250053D08E /* FilesTableViewCell.swift in Sources */,
 				FE787BBC214AA4A1009EFD88 /* HomeVC+CustomMethods.swift in Sources */,
 				FE57864C2151255800E99C7C /* SectionHeaderView.swift in Sources */,
 				843FC7452163AFB600051F13 /* VideoTableViewCell.swift in Sources */,
 				FED82FCE2150F2E800B0E921 /* HomeVC+UITableViewDelegate.swift in Sources */,
 				FE706A3B214BF18700D1060A /* MainTBC+CustomMethods.swift in Sources */,
 				FECCD53A2153E9100053D08E /* ImageTableViewCell.swift in Sources */,
+				84D243082164ED8F000083C3 /* AttachmentsTableViewCell.swift in Sources */,
 				FE706A38214BAC9700D1060A /* MainTBC.swift in Sources */,
 				FE787BB9214A9EB6009EFD88 /* HomeVC.swift in Sources */,
 				FECCD5422153E9380053D08E /* LinksTableViewCell.swift in Sources */,

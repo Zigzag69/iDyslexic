@@ -1,17 +1,17 @@
 //
-//  FilesTableViewCell.swift
+//  AttachmentsTableViewCell.swift
 //  iDyslexic
 //
-//  Created by Иван Гевелев on 20.09.2018.
+//  Created by Admin on 03.10.2018.
 //  Copyright © 2018 Heveliev Ivan. All rights reserved.
 //
 
 import UIKit
 
-class FilesTableViewCell: UITableViewCell {
+class AttachmentsTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-    }
+
+    }    
 }

@@ -28,7 +28,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RAA-Hp-9uX" userLabel="Main View">
-                        <rect key="frame" x="0.0" y="0.0" width="380" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="380" height="320.5"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ey-ff-Y7F" userLabel="Top View User Info">
                                 <rect key="frame" x="0.0" y="0.0" width="380" height="68.5"/>
@@ -87,7 +87,27 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZ3-hv-Jvu" userLabel="Middle View Text">
                                 <rect key="frame" x="0.0" y="68.5" width="380" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icTestImage3" translatesAutoresizingMaskIntoConstraints="NO" id="DE7-4U-qsM">
+                                        <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icPlayWhiteBig" translatesAutoresizingMaskIntoConstraints="NO" id="JmJ-Af-TUa">
+                                        <rect key="frame" x="166" y="76" width="48" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="Aa2-9o-dxf"/>
+                                            <constraint firstAttribute="height" constant="48" id="T1Q-hj-VsS"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="JmJ-Af-TUa" firstAttribute="centerY" secondItem="AZ3-hv-Jvu" secondAttribute="centerY" id="2pc-gN-y84"/>
+                                    <constraint firstItem="DE7-4U-qsM" firstAttribute="top" secondItem="AZ3-hv-Jvu" secondAttribute="top" id="5x6-hI-Wqr"/>
+                                    <constraint firstAttribute="bottom" secondItem="DE7-4U-qsM" secondAttribute="bottom" id="Ggx-x0-dED"/>
+                                    <constraint firstItem="JmJ-Af-TUa" firstAttribute="centerX" secondItem="AZ3-hv-Jvu" secondAttribute="centerX" id="P4K-8u-eOk"/>
+                                    <constraint firstItem="DE7-4U-qsM" firstAttribute="leading" secondItem="AZ3-hv-Jvu" secondAttribute="leading" id="XhL-FK-zRU"/>
+                                    <constraint firstAttribute="trailing" secondItem="DE7-4U-qsM" secondAttribute="trailing" id="wI7-c8-XeS"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gB9-rz-8ig" userLabel="Bottom View Feedback">
                                 <rect key="frame" x="0.0" y="268.5" width="380" height="52"/>
@@ -200,8 +220,10 @@
         <image name="icCommPass" width="24" height="24"/>
         <image name="icLikePass" width="24" height="24"/>
         <image name="icMoreHorGr" width="24" height="24"/>
+        <image name="icPlayWhiteBig" width="48" height="48"/>
         <image name="icProfileMenu" width="24" height="24"/>
         <image name="icSharePas" width="24" height="24"/>
         <image name="icTestImage2" width="40" height="40"/>
+        <image name="icTestImage3" width="650" height="433"/>
     </resources>
 </document>

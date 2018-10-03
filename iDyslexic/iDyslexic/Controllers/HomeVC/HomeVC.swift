@@ -14,8 +14,11 @@ class HomeVC: UIViewController {
     @IBOutlet weak var tableViewHomeVC: UITableView!
     
     var container = [#imageLiteral(resourceName: "icTestImage1"), #imageLiteral(resourceName: "icTestImage1"), #imageLiteral(resourceName: "icTestImage1"), #imageLiteral(resourceName: "icTestImage1"), #imageLiteral(resourceName: "icTestImage1")]
+    let containerTypes = ["Text", "Image", "Video", "Files", "Links"]
     let isHorizontalImageHeight = UIScreen.main.bounds.size.width / 4 * 3
     let isVerticalImageHeight = UIScreen.main.bounds.size.width / 3 * 4
+    let numberOfCells = Int.random(in: 1..<11)
+//    let typeOfCells = String.rand
     
 //MARK: - Life cycle
     override func viewDidLoad() {
