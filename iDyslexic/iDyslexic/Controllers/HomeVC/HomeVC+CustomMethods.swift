@@ -26,6 +26,5 @@ extension HomeVC {
     
     func generation() {
         print("Сгенерировано \(numberOfCells) ячеек в таблице")
-//        print(containerTypes.randomElement(using: &numberOfCells))
     }
 }

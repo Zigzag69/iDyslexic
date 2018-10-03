@@ -10,7 +10,7 @@ import UIKit
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return numberOfCells
+        return containerTypes.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -18,29 +18,67 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = Bundle.main.loadNibNamed("LinksTableViewCell",
-                                            owner: self,
-                                            options: nil)?.first as! LinksTableViewCell
-//        cell.imageTableViewCell.image = #imageLiteral(resourceName: "icTestImage1")
-//        if #imageLiteral(resourceName: "icTestImage1").size.height > #imageLiteral(resourceName: "icTestImage1").size.width {
-//            cell.viewHeightTableViewCell.constant = isVerticalImageHeight
-//        } else if #imageLiteral(resourceName: "icTestImage1").size.height < #imageLiteral(resourceName: "icTestImage1").size.width {
-//            cell.viewHeightTableViewCell.constant = isHorizontalImageHeight
-//        } else {
-//            cell.viewHeightTableViewCell.constant = UIScreen.main.bounds.size.width
-//        }
-        return cell
+        if containerTypes[indexPath.row] == "Text" {
+            let cell = Bundle.main.loadNibNamed("TextTableViewCell",
+                                                owner: self,
+                                                options: nil)?.first as! TextTableViewCell
+            return cell
+        } else if containerTypes[indexPath.row] == "Image" {
+            let cell = Bundle.main.loadNibNamed("ImageTableViewCell",
+                                                owner: self,
+                                                options: nil)?.first as! ImageTableViewCell
+            cell.imageTableViewCell.image = #imageLiteral(resourceName: "icTestImage1")
+            if #imageLiteral(resourceName: "icTestImage1").size.height > #imageLiteral(resourceName: "icTestImage1").size.width {
+                cell.viewHeightTableViewCell.constant = isVerticalImageHeight
+            } else if #imageLiteral(resourceName: "icTestImage1").size.height < #imageLiteral(resourceName: "icTestImage1").size.width {
+                cell.viewHeightTableViewCell.constant = isHorizontalImageHeight
+            } else {
+                cell.viewHeightTableViewCell.constant = UIScreen.main.bounds.size.width
+            }
+            return cell
+        } else if containerTypes[indexPath.row] == "Video" {
+            let cell = Bundle.main.loadNibNamed("VideoTableViewCell",
+                                                owner: self,
+                                                options: nil)?.first as! VideoTableViewCell
+            return cell
+        } else if containerTypes[indexPath.row] == "Attachments" {
+            let cell = Bundle.main.loadNibNamed("AttachmentsTableViewCell",
+                                                owner: self,
+                                                options: nil)?.first as! AttachmentsTableViewCell
+            return cell
+        } else if containerTypes[indexPath.row] == "Links" {
+            let cell = Bundle.main.loadNibNamed("LinksTableViewCell",
+                                                owner: self,
+                                                options: nil)?.first as! LinksTableViewCell
+            return cell
+        } else {
+            let cell = Bundle.main.loadNibNamed("TextTableViewCell",
+                                                owner: self,
+                                                options: nil)?.first as! TextTableViewCell
+            return cell
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        if #imageLiteral(resourceName: "icTestImage1").size.height > #imageLiteral(resourceName: "icTestImage1").size.width {
-//            return 132 + isVerticalImageHeight
-//        } else if #imageLiteral(resourceName: "icTestImage1").size.height < #imageLiteral(resourceName: "icTestImage1").size.width {
-//            return 132 + isHorizontalImageHeight
-//        } else {
-//            return 132 +  UIScreen.main.bounds.size.width
-//        }
-        return 450
+        if containerTypes[indexPath.row] == "Text" {
+            return 192
+        } else if containerTypes[indexPath.row] == "Image" {
+            if #imageLiteral(resourceName: "icTestImage1").size.height > #imageLiteral(resourceName: "icTestImage1").size.width {
+                return 132 + isVerticalImageHeight
+            } else if #imageLiteral(resourceName: "icTestImage1").size.height < #imageLiteral(resourceName: "icTestImage1").size.width {
+                return 132 + isHorizontalImageHeight
+            } else {
+                return 132 +  UIScreen.main.bounds.size.width
+            }
+        } else if containerTypes[indexPath.row] == "Video" {
+            return 332
+        } else if containerTypes[indexPath.row] == "Attachments" {
+            return 280
+        } else if containerTypes[indexPath.row] == "Links" {
+            return 450
+        } else {
+            return 10
+        }
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
