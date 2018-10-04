@@ -9,8 +9,8 @@
 import UIKit
 
 class ImageTableViewCell: UITableViewCell {
-    @IBOutlet weak var imageTableViewCell: UIImageView!
-    @IBOutlet weak var viewHeightTableViewCell: NSLayoutConstraint!
+    @IBOutlet weak var imageMiddleView: UIImageView!
+    @IBOutlet weak var middleViewHeightTableViewCell: NSLayoutConstraint!
     override func awakeFromNib() {
         super.awakeFromNib()
         

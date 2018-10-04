@@ -13,11 +13,11 @@ class HomeVC: UIViewController {
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var tableViewHomeVC: UITableView!
     
-    var containerTypes = ["Text", "Image", "Video", "Text+Attachments", "Links"]
+    var containerTypes = ["Text", "Image", "Text+Image", "Video", "Attachments", "Text+Attachments", "Links"]
     var containerGeneratedTypes = [String]()
+    let generatedNumberOfCells = Int.random(in: 1..<11)
     let isHorizontalImageHeight = UIScreen.main.bounds.size.width / 4 * 3
     let isVerticalImageHeight = UIScreen.main.bounds.size.width / 3 * 4
-    let generatedNumberOfCells = Int.random(in: 1..<11)
     
 //MARK: - Life cycle
     override func viewDidLoad() {

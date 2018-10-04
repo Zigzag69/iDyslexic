@@ -27,19 +27,38 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
             let cell = Bundle.main.loadNibNamed("ImageTableViewCell",
                                                 owner: self,
                                                 options: nil)?.first as! ImageTableViewCell
-            cell.imageTableViewCell.image = #imageLiteral(resourceName: "icTestImage1")
+            cell.imageMiddleView.image = #imageLiteral(resourceName: "icTestImage1")
             if #imageLiteral(resourceName: "icTestImage1").size.height > #imageLiteral(resourceName: "icTestImage1").size.width {
-                cell.viewHeightTableViewCell.constant = isVerticalImageHeight
+                cell.middleViewHeightTableViewCell.constant = isVerticalImageHeight
             } else if #imageLiteral(resourceName: "icTestImage1").size.height < #imageLiteral(resourceName: "icTestImage1").size.width {
-                cell.viewHeightTableViewCell.constant = isHorizontalImageHeight
+                cell.middleViewHeightTableViewCell.constant = isHorizontalImageHeight
             } else {
-                cell.viewHeightTableViewCell.constant = UIScreen.main.bounds.size.width
+                cell.middleViewHeightTableViewCell.constant = UIScreen.main.bounds.size.width
+            }
+            return cell
+            
+        } else if containerGeneratedTypes[indexPath.row] == "Text+Image" {
+            let cell = Bundle.main.loadNibNamed("TextImageTableViewCell",
+                                                owner: self,
+                                                options: nil)?.first as! TextImageTableViewCell
+            cell.imageMiddleView.image = #imageLiteral(resourceName: "icTestImage1")
+            if #imageLiteral(resourceName: "icTestImage1").size.height > #imageLiteral(resourceName: "icTestImage1").size.width {
+                cell.middleViewHeightTableViewCell.constant = isVerticalImageHeight + 76
+            } else if #imageLiteral(resourceName: "icTestImage1").size.height < #imageLiteral(resourceName: "icTestImage1").size.width {
+                cell.middleViewHeightTableViewCell.constant = isHorizontalImageHeight + 76
+            } else {
+                cell.middleViewHeightTableViewCell.constant = UIScreen.main.bounds.size.width + 76
             }
             return cell
         } else if containerGeneratedTypes[indexPath.row] == "Video" {
             let cell = Bundle.main.loadNibNamed("VideoTableViewCell",
                                                 owner: self,
                                                 options: nil)?.first as! VideoTableViewCell
+            return cell
+        } else if containerGeneratedTypes[indexPath.row] == "Attachments" {
+            let cell = Bundle.main.loadNibNamed("AttachmentsTableViewCell",
+                                                owner: self,
+                                                options: nil)?.first as! AttachmentsTableViewCell
             return cell
         } else if containerGeneratedTypes[indexPath.row] == "Text+Attachments" {
             let cell = Bundle.main.loadNibNamed("TextAttachmentsTableViewCell",
@@ -64,14 +83,24 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
             return 192
         } else if containerGeneratedTypes[indexPath.row] == "Image" {
             if #imageLiteral(resourceName: "icTestImage1").size.height > #imageLiteral(resourceName: "icTestImage1").size.width {
-                return 132 + isVerticalImageHeight
+                return isVerticalImageHeight + 132
             } else if #imageLiteral(resourceName: "icTestImage1").size.height < #imageLiteral(resourceName: "icTestImage1").size.width {
-                return 132 + isHorizontalImageHeight
+                return isHorizontalImageHeight + 132
             } else {
-                return 132 +  UIScreen.main.bounds.size.width
+                return UIScreen.main.bounds.size.width + 132
+            }
+        } else if containerGeneratedTypes[indexPath.row] == "Text+Image" {
+            if #imageLiteral(resourceName: "icTestImage1").size.height > #imageLiteral(resourceName: "icTestImage1").size.width {
+                return isVerticalImageHeight + 208
+            } else if #imageLiteral(resourceName: "icTestImage1").size.height < #imageLiteral(resourceName: "icTestImage1").size.width {
+                return isHorizontalImageHeight + 208
+            } else {
+                return UIScreen.main.bounds.size.width + 208
             }
         } else if containerGeneratedTypes[indexPath.row] == "Video" {
             return 332
+        } else if containerGeneratedTypes[indexPath.row] == "Attachments" {
+            return 204
         } else if containerGeneratedTypes[indexPath.row] == "Text+Attachments" {
             return 280
         } else if containerGeneratedTypes[indexPath.row] == "Links" {

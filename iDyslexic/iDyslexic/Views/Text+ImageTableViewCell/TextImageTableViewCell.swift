@@ -9,7 +9,9 @@
 import UIKit
 
 class TextImageTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var imageMiddleView: UIImageView!
+    @IBOutlet weak var middleViewHeightTableViewCell: NSLayoutConstraint!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

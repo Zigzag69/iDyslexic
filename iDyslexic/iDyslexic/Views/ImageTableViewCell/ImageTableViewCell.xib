@@ -204,8 +204,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="u0B-6T-qsi"/>
             <connections>
-                <outlet property="imageTableViewCell" destination="cAL-Iy-lo1" id="Xpv-Br-1D3"/>
-                <outlet property="viewHeightTableViewCell" destination="Ge9-Sj-oJj" id="UkW-aa-1lt"/>
+                <outlet property="imageMiddleView" destination="cAL-Iy-lo1" id="edr-l3-zTG"/>
+                <outlet property="middleViewHeightTableViewCell" destination="Ge9-Sj-oJj" id="gx0-RM-rSy"/>
             </connections>
             <point key="canvasLocation" x="48.75" y="195.42253521126761"/>
         </tableViewCell>
