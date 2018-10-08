@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		843FC7452163AFB600051F13 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FC7432163AFB600051F13 /* VideoTableViewCell.swift */; };
 		843FC7462163AFB600051F13 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843FC7442163AFB600051F13 /* VideoTableViewCell.xib */; };
+		849962AD216B917B00436273 /* TwoPhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849962AB216B917B00436273 /* TwoPhotosTableViewCell.swift */; };
+		849962AE216B917B00436273 /* TwoPhotosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849962AC216B917B00436273 /* TwoPhotosTableViewCell.xib */; };
+		849962B1216B91A600436273 /* TextTwoPhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849962AF216B91A600436273 /* TextTwoPhotosTableViewCell.swift */; };
+		849962B2216B91A600436273 /* TextTwoPhotosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849962B0216B91A600436273 /* TextTwoPhotosTableViewCell.xib */; };
+		849962B5216B91F800436273 /* ThreePhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849962B3216B91F800436273 /* ThreePhotosTableViewCell.swift */; };
+		849962B6216B91F800436273 /* ThreePhotosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849962B4216B91F800436273 /* ThreePhotosTableViewCell.xib */; };
+		849962B9216B920500436273 /* TextThreePhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849962B7216B920500436273 /* TextThreePhotosTableViewCell.swift */; };
+		849962BA216B920500436273 /* TextThreePhotosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849962B8216B920500436273 /* TextThreePhotosTableViewCell.xib */; };
+		849962BD216B921300436273 /* FourPhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849962BB216B921300436273 /* FourPhotosTableViewCell.swift */; };
+		849962BE216B921300436273 /* FourPhotosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849962BC216B921300436273 /* FourPhotosTableViewCell.xib */; };
+		849962C1216B921F00436273 /* TextFourPhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849962BF216B921F00436273 /* TextFourPhotosTableViewCell.swift */; };
+		849962C2216B921F00436273 /* TextFourPhotosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849962C0216B921F00436273 /* TextFourPhotosTableViewCell.xib */; };
 		84D243082164ED8F000083C3 /* TextAttachmentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D243062164ED8F000083C3 /* TextAttachmentsTableViewCell.swift */; };
 		84D243092164ED8F000083C3 /* TextAttachmentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D243072164ED8F000083C3 /* TextAttachmentsTableViewCell.xib */; };
 		84D2430E21650E97000083C3 /* TextImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D2430C21650E97000083C3 /* TextImageTableViewCell.swift */; };
@@ -40,6 +52,18 @@
 /* Begin PBXFileReference section */
 		843FC7432163AFB600051F13 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		843FC7442163AFB600051F13 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
+		849962AB216B917B00436273 /* TwoPhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPhotosTableViewCell.swift; sourceTree = "<group>"; };
+		849962AC216B917B00436273 /* TwoPhotosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoPhotosTableViewCell.xib; sourceTree = "<group>"; };
+		849962AF216B91A600436273 /* TextTwoPhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTwoPhotosTableViewCell.swift; sourceTree = "<group>"; };
+		849962B0216B91A600436273 /* TextTwoPhotosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextTwoPhotosTableViewCell.xib; sourceTree = "<group>"; };
+		849962B3216B91F800436273 /* ThreePhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreePhotosTableViewCell.swift; sourceTree = "<group>"; };
+		849962B4216B91F800436273 /* ThreePhotosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreePhotosTableViewCell.xib; sourceTree = "<group>"; };
+		849962B7216B920500436273 /* TextThreePhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextThreePhotosTableViewCell.swift; sourceTree = "<group>"; };
+		849962B8216B920500436273 /* TextThreePhotosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextThreePhotosTableViewCell.xib; sourceTree = "<group>"; };
+		849962BB216B921300436273 /* FourPhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourPhotosTableViewCell.swift; sourceTree = "<group>"; };
+		849962BC216B921300436273 /* FourPhotosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourPhotosTableViewCell.xib; sourceTree = "<group>"; };
+		849962BF216B921F00436273 /* TextFourPhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFourPhotosTableViewCell.swift; sourceTree = "<group>"; };
+		849962C0216B921F00436273 /* TextFourPhotosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFourPhotosTableViewCell.xib; sourceTree = "<group>"; };
 		84D243062164ED8F000083C3 /* TextAttachmentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAttachmentsTableViewCell.swift; sourceTree = "<group>"; };
 		84D243072164ED8F000083C3 /* TextAttachmentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextAttachmentsTableViewCell.xib; sourceTree = "<group>"; };
 		84D2430C21650E97000083C3 /* TextImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextImageTableViewCell.swift; sourceTree = "<group>"; };
@@ -88,6 +112,60 @@
 				843FC7442163AFB600051F13 /* VideoTableViewCell.xib */,
 			);
 			path = VideoTableViewCell;
+			sourceTree = "<group>";
+		};
+		849962A4216B909200436273 /* TwoPhotosTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				849962AB216B917B00436273 /* TwoPhotosTableViewCell.swift */,
+				849962AC216B917B00436273 /* TwoPhotosTableViewCell.xib */,
+			);
+			path = TwoPhotosTableViewCell;
+			sourceTree = "<group>";
+		};
+		849962A5216B909600436273 /* Text+TwoPhotosTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				849962AF216B91A600436273 /* TextTwoPhotosTableViewCell.swift */,
+				849962B0216B91A600436273 /* TextTwoPhotosTableViewCell.xib */,
+			);
+			path = "Text+TwoPhotosTableViewCell";
+			sourceTree = "<group>";
+		};
+		849962A6216B909800436273 /* ThreePhotosTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				849962B3216B91F800436273 /* ThreePhotosTableViewCell.swift */,
+				849962B4216B91F800436273 /* ThreePhotosTableViewCell.xib */,
+			);
+			path = ThreePhotosTableViewCell;
+			sourceTree = "<group>";
+		};
+		849962A7216B909A00436273 /* Text+ThreePhotosTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				849962B7216B920500436273 /* TextThreePhotosTableViewCell.swift */,
+				849962B8216B920500436273 /* TextThreePhotosTableViewCell.xib */,
+			);
+			path = "Text+ThreePhotosTableViewCell";
+			sourceTree = "<group>";
+		};
+		849962A8216B909C00436273 /* FourPhotosTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				849962BB216B921300436273 /* FourPhotosTableViewCell.swift */,
+				849962BC216B921300436273 /* FourPhotosTableViewCell.xib */,
+			);
+			path = FourPhotosTableViewCell;
+			sourceTree = "<group>";
+		};
+		849962A9216B909E00436273 /* Text+FourPhotosTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				849962BF216B921F00436273 /* TextFourPhotosTableViewCell.swift */,
+				849962C0216B921F00436273 /* TextFourPhotosTableViewCell.xib */,
+			);
+			path = "Text+FourPhotosTableViewCell";
 			sourceTree = "<group>";
 		};
 		84D243052164ED77000083C3 /* Text+AttachmentsTableViewCell */ = {
@@ -232,6 +310,12 @@
 				84D2430A21650E68000083C3 /* AttachmentsTableViewCell */,
 				84D243052164ED77000083C3 /* Text+AttachmentsTableViewCell */,
 				FECCD5212153E6800053D08E /* LinksTableViewCell */,
+				849962A4216B909200436273 /* TwoPhotosTableViewCell */,
+				849962A5216B909600436273 /* Text+TwoPhotosTableViewCell */,
+				849962A6216B909800436273 /* ThreePhotosTableViewCell */,
+				849962A7216B909A00436273 /* Text+ThreePhotosTableViewCell */,
+				849962A8216B909C00436273 /* FourPhotosTableViewCell */,
+				849962A9216B909E00436273 /* Text+FourPhotosTableViewCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -304,19 +388,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849962BA216B920500436273 /* TextThreePhotosTableViewCell.xib in Resources */,
 				FECCD53B2153E9100053D08E /* ImageTableViewCell.xib in Resources */,
+				849962B6216B91F800436273 /* ThreePhotosTableViewCell.xib in Resources */,
 				FE9D842F214F9EA700750A37 /* VerdanaPro-SemiBold.ttf in Resources */,
 				FE787BAB214A9E1C009EFD88 /* Assets.xcassets in Resources */,
+				849962C2216B921F00436273 /* TextFourPhotosTableViewCell.xib in Resources */,
 				FE9D8431214F9EAB00750A37 /* VerdanaPro-Bold.ttf in Resources */,
 				843FC7462163AFB600051F13 /* VideoTableViewCell.xib in Resources */,
 				FECCD5432153E9380053D08E /* LinksTableViewCell.xib in Resources */,
 				84D2431321650EB1000083C3 /* AttachmentsTableViewCell.xib in Resources */,
 				FE787BBA214A9EB6009EFD88 /* HomeVC.xib in Resources */,
 				FE9D8430214F9EA900750A37 /* VerdanaPro-Regular.ttf in Resources */,
+				849962AE216B917B00436273 /* TwoPhotosTableViewCell.xib in Resources */,
 				84D243092164ED8F000083C3 /* TextAttachmentsTableViewCell.xib in Resources */,
 				FECCD5372153E8F10053D08E /* TextTableViewCell.xib in Resources */,
 				84D2430F21650E97000083C3 /* TextImageTableViewCell.xib in Resources */,
 				FE57864D2151255800E99C7C /* SectionHeaderView.xib in Resources */,
+				849962BE216B921300436273 /* FourPhotosTableViewCell.xib in Resources */,
+				849962B2216B91A600436273 /* TextTwoPhotosTableViewCell.xib in Resources */,
 				84F2B90B215CFE86001F8BB3 /* videoTest.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,16 +422,22 @@
 				FE787BA4214A9E1A009EFD88 /* AppDelegate.swift in Sources */,
 				FE787BBC214AA4A1009EFD88 /* HomeVC+CustomMethods.swift in Sources */,
 				FE57864C2151255800E99C7C /* SectionHeaderView.swift in Sources */,
+				849962B1216B91A600436273 /* TextTwoPhotosTableViewCell.swift in Sources */,
 				843FC7452163AFB600051F13 /* VideoTableViewCell.swift in Sources */,
 				FED82FCE2150F2E800B0E921 /* HomeVC+UITableViewDelegate.swift in Sources */,
+				849962BD216B921300436273 /* FourPhotosTableViewCell.swift in Sources */,
 				FE706A3B214BF18700D1060A /* MainTBC+CustomMethods.swift in Sources */,
 				FECCD53A2153E9100053D08E /* ImageTableViewCell.swift in Sources */,
 				84D2431221650EB1000083C3 /* AttachmentsTableViewCell.swift in Sources */,
 				84D243082164ED8F000083C3 /* TextAttachmentsTableViewCell.swift in Sources */,
+				849962B5216B91F800436273 /* ThreePhotosTableViewCell.swift in Sources */,
+				849962B9216B920500436273 /* TextThreePhotosTableViewCell.swift in Sources */,
 				FE706A38214BAC9700D1060A /* MainTBC.swift in Sources */,
 				FE787BB9214A9EB6009EFD88 /* HomeVC.swift in Sources */,
+				849962AD216B917B00436273 /* TwoPhotosTableViewCell.swift in Sources */,
 				84D2430E21650E97000083C3 /* TextImageTableViewCell.swift in Sources */,
 				FECCD5422153E9380053D08E /* LinksTableViewCell.swift in Sources */,
+				849962C1216B921F00436273 /* TextFourPhotosTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
