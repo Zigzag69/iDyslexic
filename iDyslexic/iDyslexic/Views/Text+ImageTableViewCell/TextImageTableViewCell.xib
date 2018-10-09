@@ -21,14 +21,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="510" id="NKD-eH-cLm" customClass="TextImageTableViewCell" customModule="iDyslexic" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="380" height="208"/>
+            <rect key="frame" x="0.0" y="0.0" width="380" height="408"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NKD-eH-cLm" id="MZZ-zc-5hT">
-                <rect key="frame" x="0.0" y="0.0" width="380" height="207.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="380" height="407.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xes-PS-fmu" userLabel="Main View">
-                        <rect key="frame" x="0.0" y="0.0" width="380" height="195.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="380" height="395.5"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGm-Se-eKc" userLabel="Top View User Info">
                                 <rect key="frame" x="0.0" y="0.0" width="380" height="68"/>
@@ -86,7 +86,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWM-H4-PPl" userLabel="Middle View Image">
-                                <rect key="frame" x="0.0" y="68" width="380" height="76"/>
+                                <rect key="frame" x="0.0" y="68" width="380" height="276"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have been questioned by many people to disclose some of the greatest traffic generating techniques that I know of." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QaT-W8-206">
                                         <rect key="frame" x="16" y="0.0" width="348" height="60"/>
@@ -97,15 +97,15 @@
                                         <color key="textColor" red="0.1960784314" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WLY-pD-om8">
-                                        <rect key="frame" x="0.0" y="76" width="380" height="0.0"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icTestImageLoadedOrNotFound" translatesAutoresizingMaskIntoConstraints="NO" id="WLY-pD-om8">
+                                        <rect key="frame" x="0.0" y="76" width="380" height="200"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="QaT-W8-206" firstAttribute="top" secondItem="eWM-H4-PPl" secondAttribute="top" id="6ub-AM-9Wa"/>
                                     <constraint firstAttribute="bottom" secondItem="WLY-pD-om8" secondAttribute="bottom" id="FkQ-d0-p6x"/>
-                                    <constraint firstAttribute="height" constant="76" id="KFE-32-vIi"/>
+                                    <constraint firstAttribute="height" constant="276" id="KFE-32-vIi"/>
                                     <constraint firstAttribute="trailing" secondItem="WLY-pD-om8" secondAttribute="trailing" id="RhW-Hb-ZJA"/>
                                     <constraint firstItem="WLY-pD-om8" firstAttribute="leading" secondItem="eWM-H4-PPl" secondAttribute="leading" id="fKA-io-Pi1"/>
                                     <constraint firstItem="QaT-W8-206" firstAttribute="leading" secondItem="eWM-H4-PPl" secondAttribute="leading" constant="16" id="lFR-Ek-Y9S"/>
@@ -114,7 +114,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YI0-hj-nto" userLabel="Bottom View Feedback">
-                                <rect key="frame" x="0.0" y="144" width="380" height="52"/>
+                                <rect key="frame" x="0.0" y="344" width="380" height="52"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icLikePass" translatesAutoresizingMaskIntoConstraints="NO" id="2Hb-tM-X1E">
                                         <rect key="frame" x="16" y="14" width="24" height="24"/>
@@ -216,8 +216,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="sJc-7W-MkR"/>
             <connections>
+                <outlet property="heightMiddleView" destination="KFE-32-vIi" id="Vah-ho-e8p"/>
                 <outlet property="imageMiddleView" destination="WLY-pD-om8" id="qsq-hc-o2E"/>
-                <outlet property="middleViewHeightTableViewCell" destination="KFE-32-vIi" id="WTW-bk-YH9"/>
             </connections>
             <point key="canvasLocation" x="48.75" y="195.42253521126761"/>
         </tableViewCell>
@@ -229,5 +229,6 @@
         <image name="icProfileMenu" width="24" height="24"/>
         <image name="icSharePas" width="24" height="24"/>
         <image name="icTestImage2" width="40" height="40"/>
+        <image name="icTestImageLoadedOrNotFound" width="960" height="796"/>
     </resources>
 </document>

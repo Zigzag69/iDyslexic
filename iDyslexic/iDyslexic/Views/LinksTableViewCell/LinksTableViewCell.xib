@@ -91,7 +91,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hak-7X-Lsk" userLabel="Middle View Text">
                                 <rect key="frame" x="0.0" y="68.5" width="375" height="318"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icTestImage1" translatesAutoresizingMaskIntoConstraints="NO" id="pYl-Lc-BNU">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icTestImageLoadedOrNotFound" translatesAutoresizingMaskIntoConstraints="NO" id="pYl-Lc-BNU">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="210" id="OFM-It-Btd"/>
@@ -251,7 +251,7 @@
         <image name="icPlanetGr" width="24" height="24"/>
         <image name="icProfileMenu" width="24" height="24"/>
         <image name="icSharePas" width="24" height="24"/>
-        <image name="icTestImage1" width="375" height="280"/>
         <image name="icTestImage2" width="40" height="40"/>
+        <image name="icTestImageLoadedOrNotFound" width="960" height="796"/>
     </resources>
 </document>

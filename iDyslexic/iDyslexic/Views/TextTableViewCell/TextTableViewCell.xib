@@ -100,6 +100,7 @@
                                     <constraint firstAttribute="bottom" secondItem="I2e-db-Yaa" secondAttribute="bottom" id="BjD-It-zcC"/>
                                     <constraint firstItem="I2e-db-Yaa" firstAttribute="leading" secondItem="mPw-sH-ryw" secondAttribute="leading" constant="16" id="UTB-Qp-wwx"/>
                                     <constraint firstAttribute="trailing" secondItem="I2e-db-Yaa" secondAttribute="trailing" constant="16" id="dzO-j1-Zdn"/>
+                                    <constraint firstAttribute="height" constant="60" id="fto-bK-qwc"/>
                                     <constraint firstItem="I2e-db-Yaa" firstAttribute="top" secondItem="mPw-sH-ryw" secondAttribute="top" id="kQJ-ei-V87"/>
                                 </constraints>
                             </view>

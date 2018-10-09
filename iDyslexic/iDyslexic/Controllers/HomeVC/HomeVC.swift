@@ -13,7 +13,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var tableViewHomeVC: UITableView!
     
-    var containerTypes = ["Text", "Image", "Text+Image", "Video", "Attachments", "Text+Attachments", "Links"]
+    let containerTypes = ["Text", "Image", "Text+Image", "Video", "Text+Video", "Attachments", "Text+Attachments", "Links", "TwoPhotos"]
     var containerGeneratedTypes = [String]()
     let generatedNumberOfCells = Int.random(in: 1..<11)
     let isHorizontalImageHeight = UIScreen.main.bounds.size.width / 4 * 3
@@ -30,14 +30,14 @@ class HomeVC: UIViewController {
     
 //MARK: - IBActions
     @IBAction func removeLastElement() {
-        if containerTypes.isEmpty == false {
-            containerTypes.removeLast()
+        if containerGeneratedTypes.isEmpty == false {
+            containerGeneratedTypes.removeLast()
             tableViewHomeVC.reloadData()
         }
     }
     
     @IBAction func addElement() {
-        containerTypes.append("Text")
+        containerGeneratedTypes.append(containerTypes.randomElement()!)
         tableViewHomeVC.reloadData()
     }
 }

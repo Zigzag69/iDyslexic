@@ -29,11 +29,11 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
                                                 options: nil)?.first as! ImageTableViewCell
             cell.imageMiddleView.image = #imageLiteral(resourceName: "icTestImage1")
             if #imageLiteral(resourceName: "icTestImage1").size.height > #imageLiteral(resourceName: "icTestImage1").size.width {
-                cell.middleViewHeightTableViewCell.constant = isVerticalImageHeight
+                cell.heightMiddleView.constant = isVerticalImageHeight
             } else if #imageLiteral(resourceName: "icTestImage1").size.height < #imageLiteral(resourceName: "icTestImage1").size.width {
-                cell.middleViewHeightTableViewCell.constant = isHorizontalImageHeight
+                cell.heightMiddleView.constant = isHorizontalImageHeight
             } else {
-                cell.middleViewHeightTableViewCell.constant = UIScreen.main.bounds.size.width
+                cell.heightMiddleView.constant = UIScreen.main.bounds.size.width
             }
             return cell
             
@@ -43,17 +43,22 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
                                                 options: nil)?.first as! TextImageTableViewCell
             cell.imageMiddleView.image = #imageLiteral(resourceName: "icTestImage1")
             if #imageLiteral(resourceName: "icTestImage1").size.height > #imageLiteral(resourceName: "icTestImage1").size.width {
-                cell.middleViewHeightTableViewCell.constant = isVerticalImageHeight + 76
+                cell.heightMiddleView.constant = isVerticalImageHeight + 76
             } else if #imageLiteral(resourceName: "icTestImage1").size.height < #imageLiteral(resourceName: "icTestImage1").size.width {
-                cell.middleViewHeightTableViewCell.constant = isHorizontalImageHeight + 76
+                cell.heightMiddleView.constant = isHorizontalImageHeight + 76
             } else {
-                cell.middleViewHeightTableViewCell.constant = UIScreen.main.bounds.size.width + 76
+                cell.heightMiddleView.constant = UIScreen.main.bounds.size.width + 76
             }
             return cell
         } else if containerGeneratedTypes[indexPath.row] == "Video" {
             let cell = Bundle.main.loadNibNamed("VideoTableViewCell",
                                                 owner: self,
                                                 options: nil)?.first as! VideoTableViewCell
+            return cell
+        } else if containerGeneratedTypes[indexPath.row] == "Text+Video" {
+            let cell = Bundle.main.loadNibNamed("TextVideoTableViewCell",
+                                                owner: self,
+                                                options: nil)?.first as! TextVideoTableViewCell
             return cell
         } else if containerGeneratedTypes[indexPath.row] == "Attachments" {
             let cell = Bundle.main.loadNibNamed("AttachmentsTableViewCell",
@@ -69,6 +74,12 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
             let cell = Bundle.main.loadNibNamed("LinksTableViewCell",
                                                 owner: self,
                                                 options: nil)?.first as! LinksTableViewCell
+            return cell
+        } else if containerGeneratedTypes[indexPath.row] == "TwoPhotos" {
+            let cell = Bundle.main.loadNibNamed("TwoPhotosTableViewCell",
+                                                owner: self,
+                                                options: nil)?.first as! TwoPhotosTableViewCell
+            cell.heightMiddleView.constant = UIScreen.main.bounds.size.width / 2 - 1
             return cell
         } else {
             let cell = Bundle.main.loadNibNamed("TextTableViewCell",
@@ -99,12 +110,16 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
             }
         } else if containerGeneratedTypes[indexPath.row] == "Video" {
             return 332
+        } else if containerGeneratedTypes[indexPath.row] == "Text+Video" {
+            return 408
         } else if containerGeneratedTypes[indexPath.row] == "Attachments" {
             return 204
         } else if containerGeneratedTypes[indexPath.row] == "Text+Attachments" {
             return 280
         } else if containerGeneratedTypes[indexPath.row] == "Links" {
             return 450
+        } else if containerGeneratedTypes[indexPath.row] == "TwoPhotos" {
+            return 120 + UIScreen.main.bounds.size.width / 2 - 1
         } else {
             return 10
         }

@@ -9,7 +9,8 @@
 import UIKit
 
 class VideoTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var imagePreview: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
       

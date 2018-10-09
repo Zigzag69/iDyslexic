@@ -88,7 +88,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZ3-hv-Jvu" userLabel="Middle View Text">
                                 <rect key="frame" x="0.0" y="68.5" width="380" height="200"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icTestImage3" translatesAutoresizingMaskIntoConstraints="NO" id="DE7-4U-qsM">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icTestImageLoadedOrNotFound" translatesAutoresizingMaskIntoConstraints="NO" id="DE7-4U-qsM">
                                         <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icPlayWhiteBig" translatesAutoresizingMaskIntoConstraints="NO" id="JmJ-Af-TUa">
@@ -106,6 +106,7 @@
                                     <constraint firstAttribute="bottom" secondItem="DE7-4U-qsM" secondAttribute="bottom" id="Ggx-x0-dED"/>
                                     <constraint firstItem="JmJ-Af-TUa" firstAttribute="centerX" secondItem="AZ3-hv-Jvu" secondAttribute="centerX" id="P4K-8u-eOk"/>
                                     <constraint firstItem="DE7-4U-qsM" firstAttribute="leading" secondItem="AZ3-hv-Jvu" secondAttribute="leading" id="XhL-FK-zRU"/>
+                                    <constraint firstAttribute="height" constant="200" id="ZgT-qa-i60"/>
                                     <constraint firstAttribute="trailing" secondItem="DE7-4U-qsM" secondAttribute="trailing" id="wI7-c8-XeS"/>
                                 </constraints>
                             </view>
@@ -224,6 +225,6 @@
         <image name="icProfileMenu" width="24" height="24"/>
         <image name="icSharePas" width="24" height="24"/>
         <image name="icTestImage2" width="40" height="40"/>
-        <image name="icTestImage3" width="650" height="433"/>
+        <image name="icTestImageLoadedOrNotFound" width="960" height="796"/>
     </resources>
 </document>
