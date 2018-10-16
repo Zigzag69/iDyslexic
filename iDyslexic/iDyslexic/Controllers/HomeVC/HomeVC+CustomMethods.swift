@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import AVKit
 
 extension HomeVC {
     func preparations() {
@@ -25,10 +24,14 @@ extension HomeVC {
     }
     
     func generation() {
-        print("Сгененировано \(generatedNumberOfCells) ячеек")
         for _ in 0..<generatedNumberOfCells {
             containerGeneratedTypes.append(containerTypes.randomElement()!)
         }
-        print("Сгенерированы такие типы ячеек: \(containerGeneratedTypes)")
+        
+        if generatedNumberOfCells == 1 {
+            print("Сгененирована 1 ячейка: \(containerGeneratedTypes)")
+        } else {
+            print("Сгенерировано \(generatedNumberOfCells) ячеек: \(containerGeneratedTypes)")
+        }
     }
 }

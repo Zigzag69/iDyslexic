@@ -81,6 +81,12 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
                                                 options: nil)?.first as! TwoPhotosTableViewCell
             cell.heightMiddleView.constant = UIScreen.main.bounds.size.width / 2 - 1
             return cell
+        } else if containerGeneratedTypes[indexPath.row] == "Text+TwoPhotos" {
+            let cell = Bundle.main.loadNibNamed("TextTwoPhotosTableViewCell",
+                                                owner: self,
+                                                options: nil)?.first as! TextTwoPhotosTableViewCell
+            cell.heightMiddleView.constant = UIScreen.main.bounds.size.width / 2 + 75
+            return cell
         } else {
             let cell = Bundle.main.loadNibNamed("TextTableViewCell",
                                                 owner: self,
@@ -120,6 +126,8 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
             return 450
         } else if containerGeneratedTypes[indexPath.row] == "TwoPhotos" {
             return 120 + UIScreen.main.bounds.size.width / 2 - 1
+        } else if containerGeneratedTypes[indexPath.row] == "Text+TwoPhotos" {
+            return 196 + UIScreen.main.bounds.size.width / 2 - 1
         } else {
             return 10
         }

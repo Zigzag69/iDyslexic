@@ -12,8 +12,8 @@ class HomeVC: UIViewController {
     @IBOutlet weak var gradient: UIImageView!
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var tableViewHomeVC: UITableView!
-    
-    let containerTypes = ["Text", "Image", "Text+Image", "Video", "Text+Video", "Attachments", "Text+Attachments", "Links", "TwoPhotos"]
+
+    let containerTypes = ["Text", "Image", "Text+Image", "Video", "Text+Video", "Attachments", "Text+Attachments", "Links", "TwoPhotos", "Text+TwoPhotos"]
     var containerGeneratedTypes = [String]()
     let generatedNumberOfCells = Int.random(in: 1..<11)
     let isHorizontalImageHeight = UIScreen.main.bounds.size.width / 4 * 3
@@ -31,13 +31,17 @@ class HomeVC: UIViewController {
 //MARK: - IBActions
     @IBAction func removeLastElement() {
         if containerGeneratedTypes.isEmpty == false {
+            let lastElement = containerGeneratedTypes.last!
+            print("Элемент: \(lastElement) был удален")
             containerGeneratedTypes.removeLast()
             tableViewHomeVC.reloadData()
         }
     }
     
     @IBAction func addElement() {
-        containerGeneratedTypes.append(containerTypes.randomElement()!)
+        let randomElement = containerTypes.randomElement()!
+        print("Сгенерирован и добавлен в таблицу элемент: \(randomElement)")
+        containerGeneratedTypes.append(randomElement)
         tableViewHomeVC.reloadData()
     }
 }
