@@ -87,6 +87,24 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
                                                 options: nil)?.first as! TextTwoPhotosTableViewCell
             cell.heightMiddleView.constant = UIScreen.main.bounds.size.width / 2 + 75
             return cell
+        } else if containerGeneratedTypes[indexPath.row] == "ThreePhotos" {
+            let cell = Bundle.main.loadNibNamed("ThreePhotosTableViewCell",
+                                                owner: self,
+                                                options: nil)?.first as! ThreePhotosTableViewCell
+            cell.imageTopContainer.image = #imageLiteral(resourceName: "icTestImage1")
+            if #imageLiteral(resourceName: "icTestImage1").size.height > #imageLiteral(resourceName: "icTestImage1").size.width {
+                cell.heightMiddleView.constant = isVerticalImageHeight + UIScreen.main.bounds.size.width / 2 + 1
+                cell.heightTopContainer.constant = isVerticalImageHeight
+            } else if #imageLiteral(resourceName: "icTestImage1").size.height < #imageLiteral(resourceName: "icTestImage1").size.width {
+                cell.heightMiddleView.constant = isHorizontalImageHeight + UIScreen.main.bounds.size.width / 2 + 1
+                cell.heightTopContainer.constant = isHorizontalImageHeight
+            } else {
+                cell.heightMiddleView.constant = UIScreen.main.bounds.size.width + UIScreen.main.bounds.size.width / 2 + 1
+                cell.heightTopContainer.constant = UIScreen.main.bounds.size.width
+            }
+            cell.heightLeftContainer.constant = UIScreen.main.bounds.size.width / 2 - 1
+            cell.heightRightContainer.constant = UIScreen.main.bounds.size.width / 2 - 1
+            return cell
         } else {
             let cell = Bundle.main.loadNibNamed("TextTableViewCell",
                                                 owner: self,
@@ -128,6 +146,14 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
             return 120 + UIScreen.main.bounds.size.width / 2 - 1
         } else if containerGeneratedTypes[indexPath.row] == "Text+TwoPhotos" {
             return 196 + UIScreen.main.bounds.size.width / 2 - 1
+        } else if containerGeneratedTypes[indexPath.row] == "ThreePhotos" {
+            if #imageLiteral(resourceName: "icTestImage1").size.height > #imageLiteral(resourceName: "icTestImage1").size.width {
+                return isVerticalImageHeight + UIScreen.main.bounds.size.width / 2 + 133
+            } else if #imageLiteral(resourceName: "icTestImage1").size.height < #imageLiteral(resourceName: "icTestImage1").size.width {
+                return isHorizontalImageHeight + UIScreen.main.bounds.size.width / 2 + 133
+            } else {
+                return UIScreen.main.bounds.size.width + UIScreen.main.bounds.size.width / 2 + 133
+            }
         } else {
             return 10
         }

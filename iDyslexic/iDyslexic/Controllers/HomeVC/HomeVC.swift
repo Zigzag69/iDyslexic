@@ -13,7 +13,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var tableViewHomeVC: UITableView!
 
-    let containerTypes = ["Text", "Image", "Text+Image", "Video", "Text+Video", "Attachments", "Text+Attachments", "Links", "TwoPhotos", "Text+TwoPhotos"]
+    let containerTypes = ["Text", "Image", "Text+Image", "Video", "Text+Video", "Attachments", "Text+Attachments", "Links", "TwoPhotos", "Text+TwoPhotos", "ThreePhotos"]
     var containerGeneratedTypes = [String]()
     let generatedNumberOfCells = Int.random(in: 1..<11)
     let isHorizontalImageHeight = UIScreen.main.bounds.size.width / 4 * 3
