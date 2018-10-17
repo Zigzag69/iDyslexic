@@ -9,16 +9,14 @@
 import UIKit
 
 class TextThreePhotosTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var heightMiddleView: NSLayoutConstraint!
+    @IBOutlet weak var heightTopContainer: NSLayoutConstraint!
+    @IBOutlet weak var heightLeftContainer: NSLayoutConstraint!
+    @IBOutlet weak var heightRightContainer: NSLayoutConstraint!
+    @IBOutlet weak var imageTopContainer: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 }
